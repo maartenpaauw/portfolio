@@ -41,7 +41,7 @@
     methods: {
       async fetchData () {
         try {
-          const response = await this.$http.get('https://crossorigin.me/http://api.whatpulse.org/pulses.php?user=maartenpaauw&format=json')
+          const response = await this.$http.get('http://api.whatpulse.org/pulses.php?user=maartenpaauw&format=json')
           this.count = 0
           _.forEach(response.data, (pulse) => {
             if (moment(pulse.Timedate).isSame(new Date(), 'd')) {

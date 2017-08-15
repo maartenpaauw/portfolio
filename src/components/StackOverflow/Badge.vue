@@ -1,6 +1,6 @@
 <template lang="pug">
-  b-badge.mt-2.mr-2.px-2.pointer(variant="default",
-                                 @click.native="open")
+  b-badge.bg-asbestos.mt-2.mr-2.px-2.pointer(variant="default",
+                                             @click.native="open")
     i.fa.fa-circle.mr-2(:class="rank")
     span.fw4.text-white(v-html="label")
 </template>

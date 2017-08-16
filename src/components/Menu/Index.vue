@@ -4,7 +4,7 @@
                :variant="variant",
                :toggleable="true")
 
-    .container  
+    .container
       b-nav-toggle(target="nav_collapse")
 
       b-link.navbar-brand.my-3(v-scroll-to="'#header'")

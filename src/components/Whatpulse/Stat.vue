@@ -41,12 +41,13 @@
     methods: {
       async fetchData () {
         try {
-          const response = await this.$http.get('http://api.whatpulse.org/pulses.php?user=maartenpaauw&format=json')
+          const username = 'maartenpaauw'
+          const start = moment().startOf('day').unix()
+          const end = moment().unix()
+          const response = await this.$http.get(`http://api.whatpulse.org/pulses.php?user=${username}&start=${start}&end=${end}&format=json`)
           this.count = 0
           _.forEach(response.data, (pulse) => {
-            if (moment(pulse.Timedate).isSame(new Date(), 'd')) {
-              this.count += parseInt(pulse[_.upperFirst(this.type)])
-            }
+            this.count += +pulse[_.upperFirst(this.type)]
           })
         } catch (err) {}
       },

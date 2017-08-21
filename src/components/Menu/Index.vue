@@ -22,7 +22,6 @@
 
 <script>
   import { mapGetters } from 'vuex'
-  import _ from 'lodash'
 
   export default {
     name: 'portfolio-menu',
@@ -47,7 +46,7 @@
       },
       classes (item) {
         return {
-          'mr-4': !(item === _.last(this.items))
+          'mr-4': !(item === this.items[this.items.length - 1])
         }
       }
     }

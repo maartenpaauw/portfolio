@@ -1,5 +1,4 @@
 import { mapGetters, mapActions } from 'vuex'
-import _ from 'lodash'
 
 export default {
   computed: {
@@ -13,8 +12,8 @@ export default {
     ]),
     setActive (isVisible, entry) {
       if (isVisible) {
-        this.active(_.indexOf(
-          this.items, _.find(this.items, (item) => {
+        this.active(this.items.indexOf(
+          this.items.find((item) => {
             return item.section === `#${this.id}`
           })
         ))

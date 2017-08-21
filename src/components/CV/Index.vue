@@ -12,7 +12,6 @@
 </template>
 
 <script>
-  import _ from 'lodash'
   import { mapGetters } from 'vuex'
 
   import Section from '@/components/Helpers/Section'
@@ -37,7 +36,7 @@
         'education'
       ]),
       _work () {
-        return _.map(this.work, (work) => {
+        return this.work.map((work) => {
           return {
             title: work.position,
             subtitle: work.name,
@@ -50,7 +49,7 @@
         })
       },
       _education () {
-        return _.map(this.education, (education) => {
+        return this.education.map((education) => {
           return {
             title: education.area,
             subtitle: education.institution,

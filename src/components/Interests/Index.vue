@@ -12,7 +12,6 @@
 
 <script>
   import { mapGetters } from 'vuex'
-  import _ from 'lodash'
   import slugify from 'slugify'
 
   import Section from '@/components/Helpers/Section'
@@ -29,8 +28,8 @@
         _interests: 'interests'
       }),
       interests () {
-        return _.sortBy(this._interests, (interest) => {
-          return interest.name
+        return this._interests.sort((a, b) => {
+          return a.name.localeCompare(b.name)
         })
       }
     },

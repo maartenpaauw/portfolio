@@ -11,7 +11,6 @@
 </template>
 
 <script>
-  import moment from 'moment'
   import { mapGetters } from 'vuex'
 
   import Section from '@/components/Helpers/Section'
@@ -34,17 +33,20 @@
         'email'
       ]),
       from () {
-        return moment(this.period.from).format('D MMMM')
+        return new Intl.DateTimeFormat(['nl-NL'], {
+          day: 'numeric',
+          month: 'long'
+        }).format(new Date(this.period.from))
       },
       to () {
-        return moment(this.period.to).format('D MMMM')
+        return new Intl.DateTimeFormat(['nl-NL'], {
+          day: 'numeric',
+          month: 'long'
+        }).format(new Date(this.period.to))
       },
       mailto () {
         return `mailto:${this.email}?subject=Stageplaats`
       }
-    },
-    created () {
-      moment.locale('nl')
     }
   }
 </script>

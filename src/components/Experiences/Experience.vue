@@ -54,7 +54,7 @@
         }).format(new Date(this.experience.start))
       },
       end () {
-        return (this.experience.end === '') ? 'Huidig'
+        return typeof this.experience.end === 'undefined' ? 'Huidig'
           : new Intl.DateTimeFormat(['nl-NL'], {
             month: 'long',
             year: 'numeric'

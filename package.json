@@ -38,6 +38,7 @@
     "css-line-height": "1.0.7",
     "flag-icon-css": "2.8.0",
     "font-awesome": "4.7.0",
+    "intersection-observer": "0.4.0",
     "just-modulo": "1.0.1",
     "slugify": "1.2.1",
     "typeface-montserrat": "0.0.31",
@@ -147,7 +148,7 @@
     "branchPrefix": "dependency-update-",
     "label": "dependency-update",
     "ignore": [
-      "typeface-montserrat"  
+      "typeface-montserrat"
     ]
   },
   "engines": {

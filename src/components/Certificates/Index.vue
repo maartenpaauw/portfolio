@@ -10,7 +10,6 @@
 </template>
 
 <script>
-  import _ from 'lodash'
   import { mapGetters } from 'vuex'
 
   import Section from '@/components/Helpers/Section'
@@ -34,8 +33,8 @@
         'vocational'
       ]),
       vocationals () {
-        return _.map(this.vocational, (vocational) => {
-          vocational.accreditations = _.map(vocational.accreditations, (accreditations) => {
+        return this.vocational.map((vocational) => {
+          vocational.accreditations = vocational.accreditations.map((accreditations) => {
             return {
               title: accreditations.title,
               subtitle: 'Certificaat',

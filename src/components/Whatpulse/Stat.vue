@@ -7,8 +7,6 @@
 </template>
 
 <script>
-  import _ from 'lodash'
-
   import VueCountUp from 'vue-countup-v2'
 
   export default {
@@ -46,8 +44,8 @@
           const end = Math.floor(date.setHours(23, 59, 59, 999) / 1000)
           const response = await this.$http.get(`http://api.whatpulse.org/pulses.php?user=${username}&start=${start}&end=${end}&format=json`)
           this.count = 0
-          _.forEach(response.data, (pulse) => {
-            this.count += +pulse[_.upperFirst(this.type)]
+          Object.values(response.data).forEach((pulse) => {
+            this.count += +pulse[this.type.replace(/^./, l => l.toUpperCase())]
           })
         } catch (err) {}
       },

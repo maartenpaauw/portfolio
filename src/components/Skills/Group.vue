@@ -11,7 +11,6 @@
 </template>
 
 <script>
-  import _ from 'lodash'
   import Keyword from '@/components/Skills/Keyword'
 
   export default {
@@ -27,8 +26,8 @@
     },
     computed: {
       keywords () {
-        return _.sortBy(this.skill.keywords, (keyword) => {
-          return keyword
+        return this.skill.keywords.sort((a, b) => {
+          return a.localeCompare(b)
         })
       }
     }

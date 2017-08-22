@@ -1,5 +1,6 @@
 <template lang="pug">
-  a.btn.btn-outline-secondary.text-center.m-auto(:href="href")
+  b-button.text-uppercase(:variant="variant",
+                          :href="href")
     slot
 </template>
 
@@ -10,21 +11,12 @@
       href: {
         required: false,
         value: String
+      },
+      variant: {
+        required: false,
+        value: String,
+        default: 'outline-secondary'
       }
     }
   }
 </script>
-
-<style lang="scss" scoped="scoped">
-
-  // Flat Colors
-  @import "../../../node_modules/flat-ui-colors-sass/flat-colors";
-
-  a {
-    text-transform: uppercase;
-    background-color: transparent;
-    border-color: $flat-silver;
-    color: $flat-silver;
-    border-radius: 2px;
-  }
-</style>

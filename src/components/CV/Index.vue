@@ -13,6 +13,7 @@
 
 <script>
   import { mapGetters } from 'vuex'
+  import slugify from 'slugify'
 
   import Section from '@/components/Helpers/Section'
   import Experiences from '@/components/Experiences/Index'
@@ -57,7 +58,7 @@
             start: education.startDate,
             end: education.endDate,
             icon: 'fa-graduation-cap',
-            url: null
+            url: `./static/cv/education/${slugify(education.institution + ' ' + education.area).toLowerCase()}.pdf`
           }
         })
       }

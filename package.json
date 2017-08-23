@@ -31,6 +31,7 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
+    "animate.css": "3.5.2",
     "axios": "0.16.2",
     "bootstrap": "4.0.0-beta",
     "bootstrap-vue": "1.0.0-beta.5",

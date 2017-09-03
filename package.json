@@ -22,7 +22,8 @@
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
-    "build": "node build/build.js",
+    "build": "yarn run resume && node build/build.js",
+    "resume": "cd src/resume && resume export ../../static/cv/maartenpaauw.pdf -t classy -f pdf",    
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run && codecov -f test/unit/coverage/*.json",
     "e2e": "node test/e2e/runner.js",
     "test": "yarn run unit && yarn run e2e",
@@ -122,6 +123,7 @@
     "purify-css": "1.2.5",
     "purifycss-webpack": "0.7.0",
     "raw-loader": "0.5.1",
+    "resume-cli": "0.4.19",
     "resume-schema": "jsonresume/resume-schema#v1.0.0",
     "rimraf": "2.6.1",
     "sass-loader": "6.0.6",

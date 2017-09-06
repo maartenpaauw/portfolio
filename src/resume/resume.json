@@ -58,16 +58,6 @@
       "highlights": []
     },
     {
-      "name": "Katwijkse Zeeverkenners",
-      "description": "",
-      "position": "Hoofdbegeleider Wildevaert",
-      "url": "https://www.katwijksezeeverkenners.nl/",
-      "startDate": "2012-09-01",
-      "endDate": "2014-02-01",
-      "summary": "Hoofdbegeleider op de Wildevaert groep binnen de Katwijkse Zeeverkenners.",
-      "highlights": []
-    },
-    {
       "name": "Station Drukwerk",
       "description": "",
       "position": "Allround DTP-er",
@@ -95,16 +85,6 @@
       "startDate": "2012-01-01",
       "endDate": "2013-01-01",
       "summary": "Ik verricht alle voorkomende DTP opdrachten zoals: Ontwerpen huisstijlen, promotie materiaal, flyers, posters, logo's enzovoort. Opdrachten o.a. uitgevoerd voor: PEAMP Financial - Control & Interim Management. Challenge 11 - Management, Finance & Control. Rob van den Oever - Timmer-, klus- en onderhoudsbedrijf. Paauw & van Duijvenbode B.V. LaQ - Nederland. Zafer - Verbouwings-, Onderhouds- en Schildersbedrijf.",
-      "highlights": []
-    },
-    {
-      "name": "Katwijkse Zeeverkenners",
-      "description": "",
-      "position": "Voorzitter Wildevaert",
-      "url": "https://www.katwijksezeeverkenners.nl/",
-      "startDate": "2011-09-01",
-      "endDate": "2012-09-01",
-      "summary": "Voorzitter op de Wildevaert groep binnen de Katwijkse Zeeverkenners.",
       "highlights": []
     },
     {
@@ -148,7 +128,26 @@
       "highlights": []
     }
   ],
-  "volunteer": [],
+  "volunteer": [
+    {
+      "organization": "Katwijkse Zeeverkenners",
+      "position": "Hoofdbegeleider Wildevaert",
+      "url": "https://www.katwijksezeeverkenners.nl/",
+      "startDate": "2012-09-01",
+      "endDate": "2014-02-01",
+      "summary": "Hoofdbegeleider op de Wildevaert groep binnen de Katwijkse Zeeverkenners.",
+      "highlights": []
+    },
+    {
+      "organization": "Katwijkse Zeeverkenners",
+      "position": "Voorzitter Wildevaert",
+      "url": "https://www.katwijksezeeverkenners.nl/",
+      "startDate": "2011-09-01",
+      "endDate": "2012-09-01",
+      "summary": "Voorzitter op de Wildevaert groep binnen de Katwijkse Zeeverkenners.",
+      "highlights": []
+    }
+  ],
   "education": [
     {
       "institution": "Hogeschool Leiden",

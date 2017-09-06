@@ -9,6 +9,9 @@
 
     cv-experiences(title="Werkervaring",
                    :experiences="_work")
+
+    cv-experiences(title="Vrijwillig",
+                   :experiences="_volunteer")
     cv-download
 </template>
 
@@ -37,7 +40,8 @@
     computed: {
       ...mapGetters('resume', [
         'work',
-        'education'
+        'education',
+        'volunteer'
       ]),
       _work () {
         return this.work.map((work) => {
@@ -62,6 +66,19 @@
             end: education.endDate,
             icon: 'fa-graduation-cap',
             url: this.inFuture(education.endDate) ? null : this.file(education)
+          }
+        })
+      },
+      _volunteer () {
+        return this.volunteer.map((volunteer) => {
+          return {
+            title: volunteer.position,
+            subtitle: volunteer.organization,
+            summary: volunteer.summary,
+            start: volunteer.startDate,
+            end: volunteer.endDate,
+            icon: 'fa-handshake-o',
+            url: volunteer.url
           }
         })
       }

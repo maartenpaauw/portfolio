@@ -3,7 +3,7 @@
 import BootstrapVue from 'bootstrap-vue'
 import Vue from 'vue'
 import VueResource from 'vue-resource'
-import VueObserveVisibility from 'vue-observe-visibility/dist/vue-observe-visibility'
+import VueObserveVisibility from 'vue-observe-visibility'
 import VueScroll from 'vue-scroll'
 import VueScrollTo from 'vue-scrollto'
 

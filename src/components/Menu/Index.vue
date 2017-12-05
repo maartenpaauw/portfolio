@@ -11,7 +11,7 @@
         span.text-uppercase.text-white.px-3.py-1(v-html="name")
 
       b-collapse#nav_collapse(is-nav="is-nav")
-        b-nav.ml-auto(is-nav-bar="is-nav-bar")
+        b-navbar-nav.ml-auto
           b-nav-item(v-for="(item, index) in items",
                      v-scroll-to="item.section",
                      :active="isActive(item)",

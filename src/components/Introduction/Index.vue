@@ -20,7 +20,9 @@
           introduction-languages
 
         introduction-information(label="Adres")
-          p.mb-0.silver.lh-2
+          a.silver.hover-midnight-blue.lh-2.hover-text-decoration-none.transition-400(:href="maps", 
+                                                                                      target="_blank",
+                                                                                      rel="noopener",)
             span.d-block(v-html="location.address")
             span.d-block(v-html="`${location.postalCode} ${location.city}`")
             span.d-block(v-html="location.region")
@@ -68,6 +70,9 @@
       ]),
       tel () {
         return this.phone.replace(/\D+/g, '')
+      },
+      maps () {
+        return `https://www.google.nl/maps/place/${this.location.address.replace(' ', '+')},+${this.location.postalCode.replace(' ', '+')}+${this.location.city}/`
       }
     },
     mixins: [

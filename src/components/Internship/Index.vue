@@ -1,5 +1,5 @@
 <template lang="pug">
-  internship-section(id="internship",
+  internship-section(:id="id",
                      background-color="midnight-blue",
                      v-show="show")
     .row
@@ -48,6 +48,9 @@
         const inThird = this.$moment().isBetween(this.$moment('2017-07-17'), this.$moment('2018-07-16'))
         const inFourth = this.$moment().isBetween(this.$moment('2018-07-16'), this.$moment('2019-07-15'))
         return this.visible(inThird, 'stage') || this.visible(inFourth, 'afstudeerstage')
+      },
+      id () {
+        return `internship-${this.internship.type}`
       }
     },
     methods: {

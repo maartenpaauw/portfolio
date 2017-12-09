@@ -72,7 +72,7 @@
         return this.phone.replace(/\D+/g, '')
       },
       maps () {
-        return `https://www.google.nl/maps/place/${this.location.address.replace(' ', '+')},+${this.location.postalCode.replace(' ', '+')}+${this.location.city}/`
+        return `https://www.google.nl/maps/place/${this.location.address.replace(' ', '+')},+${this.location.postalCode.replace(' ', '+')}+${this.location.city.replace(' ', '+')}/`
       }
     },
     mixins: [

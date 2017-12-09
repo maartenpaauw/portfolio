@@ -1,5 +1,7 @@
 <template lang="pug">
-  header.h-100(:id="id")
+  header.h-100(:id="id",
+               v-observe-visibility="setActive")
+
     portfolio-menu(:variant="variant")
     .container-fluid.bg-clouds.bg-image.h-75(v-observe-visibility="setVariant")
       .row.h-100.align-items-center
@@ -12,8 +14,11 @@
 
 <script>
   import { mapGetters } from 'vuex'
+  
   import Image from '@/components/Header/Image'
   import Menu from '@/components/Menu/Index'
+  
+  import active from '@/mixins/active'
 
   export default {
     name: 'portfolio-header',
@@ -43,7 +48,10 @@
       setVariant (isVisible, entry) {
         this.variant = isVisible ? 'transparent-white' : 'midnight-blue'
       }
-    }
+    },
+    mixins: [
+      active
+    ]
   }
 </script>
 

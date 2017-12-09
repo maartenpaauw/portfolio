@@ -1,6 +1,6 @@
 <template lang="pug">
   section(:id="id")
-    .container-fluid.p-0(:class="classes")
+    .container-fluid(:class="classes")
       .container(v-if="inContainer")
         section-title(v-if="visible",
                       :title="title",

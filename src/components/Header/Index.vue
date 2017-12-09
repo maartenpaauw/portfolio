@@ -12,9 +12,9 @@
 
 <script>
   import { mapGetters } from 'vuex'
+  
   import Image from '@/components/Header/Image'
   import Menu from '@/components/Menu/Index'
-
   export default {
     name: 'portfolio-header',
     data () {

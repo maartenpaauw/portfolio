@@ -1,5 +1,5 @@
 <template lang="pug">
-  other-section(id="other",
+  other-section(:id="id",
                 background-color="clouds")
 </template>
 
@@ -8,6 +8,11 @@
 
   export default {
     name: 'portfolio-other',
+    data () {
+      return {
+        id: 'other'
+      }
+    },
     components: {
       otherSection: Section
     }

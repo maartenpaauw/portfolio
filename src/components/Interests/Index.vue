@@ -37,6 +37,7 @@
       icon (name) {
         return {
           'apple': 'fa-apple',
+          'bella-and-sarah': 'fa-paw',
           'films-and-series': 'fa-film',
           'games': 'fa-gamepad',
           'gitaar-spelen': 'skill skill-gitaar-spelen',

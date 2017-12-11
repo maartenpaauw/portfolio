@@ -14,7 +14,7 @@
   import Keyword from '@/components/Skills/Keyword'
 
   export default {
-    name: 'skill-group',
+    name: 'skills-group',
     props: {
       skill: {
         required: true,

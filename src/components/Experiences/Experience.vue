@@ -22,7 +22,7 @@
 
 <script>
   export default {
-    name: 'portfolio-experience',
+    name: 'experiences-experience',
     props: {
       experience: {
         type: Object,

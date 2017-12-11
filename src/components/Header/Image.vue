@@ -12,7 +12,7 @@
   import { mapGetters } from 'vuex'
 
   export default {
-    name: 'portfolio-image',
+    name: 'header-image',
     components: {
       vueGravatar: Gravatar
     },

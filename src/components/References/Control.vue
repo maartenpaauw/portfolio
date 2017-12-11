@@ -6,7 +6,7 @@
 
 <script>
   export default {
-    name: 'reference-control',
+    name: 'references-control',
     props: {
       direction: {
         type: String,

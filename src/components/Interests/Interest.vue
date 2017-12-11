@@ -9,7 +9,7 @@
   import Icon from '@/components/Helpers/Icon'
 
   export default {
-    name: 'interest',
+    name: 'interests-interest',
     components: {
       interestIcon: Icon
     },

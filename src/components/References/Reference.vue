@@ -7,7 +7,7 @@
 
 <script>
   export default {
-    name: 'reference',
+    name: 'references-reference',
     props: {
       reference: {
         required: true,

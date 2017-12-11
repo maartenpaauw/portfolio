@@ -12,7 +12,7 @@
   import Button from '@/components/Helpers/Button'
 
   export default {
-    name: 'download-cv',
+    name: 'portfolio-download',
     components: {
       download: Button
     },

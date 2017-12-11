@@ -9,7 +9,7 @@
   import Icon from '@/components/Helpers/Icon'
 
   export default {
-    name: 'skill-keyword',
+    name: 'skills-keyword',
     props: {
       keyword: {
         required: true,

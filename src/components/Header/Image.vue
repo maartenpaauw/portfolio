@@ -4,7 +4,7 @@
       .col.text-center
         vue-gravatar(:email="email",
                      :size="200",
-                     class="img-fluid")
+                     class="img-fluid rounded-circle")
 </template>
 
 <script>
@@ -29,7 +29,6 @@
     margin-top: -100px;
 
     img {
-      border-radius: 100%;
       border: 5px white solid;
     }
   }

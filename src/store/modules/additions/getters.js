@@ -2,6 +2,9 @@ export default {
   birthday: state => {
     return state.birthday
   },
+  birthplace: state => {
+    return state.birthplace
+  },
   gender: state => {
     return state.gender
   },

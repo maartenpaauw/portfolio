@@ -14,12 +14,12 @@
   @import "~css-font-weight/css/font-weight.min.css";
   @import "~css-line-height/css/line-height.min.css";
   @import "~css-cursors/css/css-cursors.min.css";
-  @import "~flat-ui-colors-helper/src/flat-ui-colors";
+  @import "~flat-ui-colors-helper";
 
   // NPM
   @import "~typeface-montserrat/index.css";
   @import "~bootstrap-vue/dist/bootstrap-vue.css";
-  @import "~bootstrap/dist/css/bootstrap.min.css";
+  @import "~bootstrap/scss/bootstrap";
   @import "~font-awesome/css/font-awesome.min.css";
   @import "~animate.css/animate.min.css";
 

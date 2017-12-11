@@ -1,0 +1,12 @@
+{
+  "additions": {
+    "birthday": "1993-01-02",
+    "gender": "Man",
+    "nationality": "Nederlandse",
+    "marital_status": "Samenwonend",
+    "drivers_license": [
+      "AM",
+      "B"
+    ]
+  }
+}

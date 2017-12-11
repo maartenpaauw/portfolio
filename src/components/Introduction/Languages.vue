@@ -22,7 +22,7 @@
       flag (language) {
         return {
           nederlands: 'flag-icon-nl',
-          engels: 'flag-icon-us'
+          engels: 'flag-icon-gb'
         }[language.toLowerCase()]
       }
     }

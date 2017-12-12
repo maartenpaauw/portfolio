@@ -9,6 +9,7 @@
 
 <script>
   export default {
+    name: 'stack-overflow-badge',
     props: {
       badge: {
         required: false,

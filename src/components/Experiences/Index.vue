@@ -12,7 +12,7 @@
   import Experience from '@/components/Experiences/Experience'
 
   export default {
-    name: 'experiences',
+    name: 'portfolio-experiences',
     props: {
       title: {
         required: true,

@@ -11,6 +11,7 @@
   import VueCountUp from 'vue-countup-v2'
 
   export default {
+    name: 'whatpulse-stat',
     props: {
       type: {
         type: String,

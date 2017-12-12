@@ -126,6 +126,12 @@
   }
 }
 
+.skill-yaml {
+  &:hover {
+    color: $skill-yaml-hover;
+  }
+}
+
 .skill-angular {
   &:hover {
     color: $skill-angular-hover;

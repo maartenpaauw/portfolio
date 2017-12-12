@@ -5,8 +5,8 @@
                  v-observe-visibility="setActive")
     .row
       skills-group(v-for="(skill, index) in skills",
-                    :key="index",
-                    :skill="skill")
+                   :key="index",
+                   :skill="skill")
     cv-download
 </template>
 

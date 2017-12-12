@@ -13,9 +13,10 @@
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
+  
   import _ from 'lodash'
   import slugify from 'slugify'
-  import { mapGetters } from 'vuex'
 
   export default {
     name: 'footer-social',

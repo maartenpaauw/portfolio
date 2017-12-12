@@ -213,48 +213,49 @@
       "keywords": [
         "Apache",
         "Bower",
+        "CSS3",
+        "Git",
         "GitHub",
         "Grunt",
         "Gulp",
+        "HTML5",
+        "Java",
+        "Javascript",
         "jQuery",
         "Less",
         "Mocha",
         "Mongodb",
-        "Nginx",
-        "HTML5",
-        "CSS3",
-        "Sass",
-        "Javascript",
-        "Typescript",
-        "Python",
         "MySQL",
+        "Nginx",
         "Nodejs",
-        "Git",
         "PHP",
-        "Java"
+        "Python",
+        "Sass",
+        "Typescript",
+        "YAML"
       ]
     },
     {
       "name": "Frameworks",
       "level": "Master", 
       "keywords": [
-        "Laravel",
-        "Vue",
         "Angular",
         "Bootstrap",
         "Express",
-        "Symfony"
+        "Laravel",
+        "Symfony",
+        "Vue"
       ]
     },
     {
       "name": "DTP Allround",
       "level": "Master", 
       "keywords": [
-        "InDesign",
-        "Illustrator",
-        "Photoshop",
+        "Acrobat",
         "Bridge",
-        "Acrobat"
+        "Illustrator",
+        "InDesign",
+        "Photoshop"
       ]
     }
   ],

@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: 'portfolio-skills';
-  src: url('#{$icomoon-font-path}/portfolio-skills.eot?hgbrvq');
+  src: url('#{$icomoon-font-path}/portfolio-skills.eot?6su7bx');
   src:
-    url('#{$icomoon-font-path}/portfolio-skills.eot?hgbrvq#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/portfolio-skills.ttf?hgbrvq') format('truetype'),
-    url('#{$icomoon-font-path}/portfolio-skills.woff?hgbrvq') format('woff'),
-    url('#{$icomoon-font-path}/portfolio-skills.svg?hgbrvq#portfolio-skills') format('svg');
+    url('#{$icomoon-font-path}/portfolio-skills.eot?6su7bx#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/portfolio-skills.ttf?6su7bx') format('truetype'),
+    url('#{$icomoon-font-path}/portfolio-skills.woff?6su7bx') format('woff'),
+    url('#{$icomoon-font-path}/portfolio-skills.svg?6su7bx#portfolio-skills') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -162,6 +162,12 @@
 .skill-typescript {
   &::before {
     content: $skill-typescript;
+  }
+}
+
+.skill-yaml {
+  &::before {
+    content: $skill-yaml;
   }
 }
 

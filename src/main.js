@@ -11,11 +11,11 @@ import VueScrollTo from 'vue-scrollto'
 import App from './App'
 import router from './router'
 import store from './store'
-import momentPlugin from './plugins/moment'
+import moment from './plugins/moment'
 
 import 'intersection-observer'
 
-Vue.use(momentPlugin)
+Vue.use(moment)
 Vue.use(BootstrapVue)
 Vue.use(VueResource)
 Vue.use(VueScrollTo)

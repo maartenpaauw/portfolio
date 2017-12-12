@@ -8,7 +8,8 @@
         introduction-information(label="Functie",
                                  :value="label")
         introduction-link(label="Adres",
-                          :href="maps")
+                          :href="maps",
+                          :blank="true")
             span.d-block(v-html="location.address")
             span.d-block(v-html="`${location.postalCode} ${location.city}`")
             span.d-block(v-html="location.region")

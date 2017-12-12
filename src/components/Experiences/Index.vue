@@ -4,7 +4,8 @@
       strong.text-uppercase.midnight-blue(v-html="title")
     .col
       .row
-        .col-12(v-for="experience in experiences")
+        .col-12(v-for="(experience, index) in experiences",
+                :key="index")
           experience(:experience="experience")
 </template>
 

@@ -11,7 +11,13 @@
     computed: {
       ...mapGetters('basics', [
         'summary'
-      ])
+      ]),
+      ...mapGetters('additions', [
+        'birthday'
+      ]),
+      age () {
+        return this.$moment().diff(this.birthday, 'years')
+      }
     }
   }
 </script>

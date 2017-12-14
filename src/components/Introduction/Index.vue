@@ -39,7 +39,6 @@
 
 <script>
   import { mapGetters } from 'vuex'
-  import moment from 'moment'
 
   import Section from '@/components/Helpers/Section'
   import Link from '@/components/Introduction/Link'
@@ -91,7 +90,7 @@
         return `https://www.google.nl/maps/place/${this.location.address}, ${this.location.postalCode} ${this.location.city}/`.split(' ').join('+')
       },
       born () {
-        return `${moment(this.birthday).format('D MMMM YYYY')} in ${this.birthplace}`
+        return `${this.$moment(this.birthday).format('D MMMM YYYY')} in ${this.birthplace}`
       },
       licenses () {
         return this.drivers_license.join(' + ')

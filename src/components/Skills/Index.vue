@@ -1,7 +1,7 @@
 <template lang="pug">
   skills-section(:id="id",
                  title="Vaardigheden",
-                 subtitle="Lorem ipsum dolor sit amet",
+                 subtitle="1 logo zegt meer dan 1000 woorden",
                  v-observe-visibility="setActive")
     .row
       skills-group(v-for="(skill, index) in skills",

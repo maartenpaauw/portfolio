@@ -10,11 +10,11 @@
     props: {
       href: {
         required: false,
-        value: String
+        type: String
       },
       variant: {
         required: false,
-        value: String,
+        type: String,
         default: 'dark'
       }
     },

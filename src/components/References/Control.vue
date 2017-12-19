@@ -5,6 +5,8 @@
 </template>
 
 <script>
+  import { mapActions } from 'vuex'
+
   export default {
     name: 'references-control',
     props: {
@@ -23,8 +25,12 @@
       }
     },
     methods: {
+      ...mapActions([
+        'next',
+        'previous'
+      ]),
       click () {
-        this.$store.dispatch(this.direction)
+        this[this.direction]()
       }
     }
   }

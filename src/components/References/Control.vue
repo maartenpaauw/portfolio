@@ -1,10 +1,12 @@
 <template lang="pug">
   .col-2.text-center.mt-3
-    i.fa.fa-3x.midnight-blue.p-2(:class="icon",
-                                 @click="click")
+    i.fa.fa-3x.midnight-blue.p-2.cursor-pointer(:class="icon",
+                                                @click="click")
 </template>
 
 <script>
+  import { mapActions } from 'vuex'
+
   export default {
     name: 'references-control',
     props: {
@@ -23,15 +25,13 @@
       }
     },
     methods: {
+      ...mapActions([
+        'next',
+        'previous'
+      ]),
       click () {
-        this.$store.dispatch(this.direction)
+        this[this.direction]()
       }
     }
   }
 </script>
-
-<style lang="scss" scoped="scoped">
-  i {
-    cursor: pointer;
-  }
-</style>

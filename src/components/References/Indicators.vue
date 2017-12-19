@@ -1,9 +1,9 @@
 <template lang="pug">
   .col-12.text-center
-    i.fa.midnight-blue(v-for="(reference, index) in references",
-                            :class="classes(index)",
-                            @click="click(index)",
-                            :key="index")
+    i.fa.midnight-blue.cursor-pointer(v-for="(reference, index) in references",
+                                      :class="classes(index)",
+                                      :key="index",
+                                      @click="click(index)")
 </template>
 
 <script>
@@ -40,9 +40,3 @@
     }
   }
 </script>
-
-<style lang="scss" scoped="scoped">
-  i {
-    cursor: pointer;
-  }
-</style>

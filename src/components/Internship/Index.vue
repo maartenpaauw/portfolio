@@ -1,7 +1,7 @@
 <template lang="pug">
   internship-section(:id="id",
                      background-color="midnight-blue",
-                     v-show="show")
+                     v-if="show")
     .row
       .col.text-center
         h1.h2.text-white Momenteel ben ik op zoek naar een {{ internship.type }}.
@@ -36,26 +36,22 @@
         'email'
       ]),
       from () {
-        return this.$moment(this.internship.from).format('D MMMM')
+        return this.$moment(this.internship.from).format(this.sameYear ? 'MMMM' : 'MMMM YYYY')
       },
       to () {
-        return this.$moment(this.internship.to).format('D MMMM YYYY')
+        return this.$moment(this.internship.to).format('MMMM YYYY')
+      },
+      sameYear () {
+        return this.internship.from.getFullYear() === this.internship.to.getFullYear()
       },
       mailto () {
         return `mailto:${this.email}?subject=${_.upperFirst(this.internship.type)}`
       },
       show () {
-        const inThird = this.$moment().isBetween(this.$moment('2017-07-17'), this.$moment('2018-07-16'))
-        const inFourth = this.$moment().isBetween(this.$moment('2018-07-16'), this.$moment('2019-07-15'))
-        return this.visible(inThird, 'stage') || this.visible(inFourth, 'afstudeerstage')
+        return this.$moment().isBefore(this.internship.from)
       },
       id () {
         return `internship-${this.internship.type}`
-      }
-    },
-    methods: {
-      visible (inPeriod, type) {
-        return inPeriod && this.$moment().isBefore(this.internship.from) && this.internship.type === type
       }
     }
   }

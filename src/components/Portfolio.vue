@@ -6,11 +6,11 @@
     portfolio-cv
     portfolio-whatpulse
     portfolio-certificates
-    portfolio-internship(v-for="iternship in iternships",
-                         :internship="iternship",
-                         :key="iternship.type")
+    //- portfolio-other
+    portfolio-internship(:internship="iternships[0]")
     portfolio-skills
-    portfolio-other
+    //- portfolio-other
+    portfolio-internship(:internship="iternships[1]")
     portfolio-references
     portfolio-interests
     portfolio-projects
@@ -38,13 +38,13 @@
       return {
         iternships: [{
           type: 'stage',
-          from: new Date('2018-02-05'),
-          to: new Date('2018-07-13')
+          from: new Date('2018-08-01'),
+          to: new Date('2019-01-01')
         },
         {
           type: 'afstudeerstage',
-          from: new Date('2019-02-05'), // TODO: check if this date is correct.
-          to: new Date('2019-07-13') // TODO: check if this date is correct.
+          from: new Date('2019-02-01'),
+          to: new Date('2019-07-01')
         }]
       }
     },

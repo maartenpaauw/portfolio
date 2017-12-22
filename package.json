@@ -139,7 +139,7 @@
     "stylus-loader": "3.0.1",
     "uglifyjs-webpack-plugin3": "1.0.0-beta",
     "url-loader": "0.6.2",
-    "vue-loader": "13.6.0",
+    "vue-loader": "13.6.1",
     "vue-style-loader": "3.0.3",
     "vue-template-compiler": "2.5.13",
     "webpack": "3.10.0",

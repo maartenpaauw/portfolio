@@ -9,7 +9,15 @@
                              :badge="badge",
                              :key="index")
     stack-overflow-description
-      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis turpis quis nulla lobortis tincidunt. Phasellus aliquam odio elit, nec pretium velit dapibus sit amet. Curabitur nec vestibulum lectus. Donec laoreet porta nisl in lobortis. Ut nec metus velit. Sed nec elementum tortor. Quisque ac leo rutrum, congue lectus vitae, rutrum nibh. Donec faucibus elit eu iaculis blandit.
+      a.asbestos(href="https://stackoverflow.com/",
+                 target="_blank",
+                 rel="noopener") Stack Overflow
+      |
+      | is
+      |
+      i het
+      |
+      | platform voor professionele programmeurs om kennis te delen en op te doen. Hier kan je door vragen te stellen en te beantwoorden badges verdienen. Hierboven zie je de badges die ik gehaald heb. Als je op de badge klikt zie je meer informatie over de badge. Neem rustig een kijkje.
 </template>
 
 <script>

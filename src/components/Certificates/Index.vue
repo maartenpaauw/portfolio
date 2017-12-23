@@ -2,7 +2,7 @@
   certificates-section(:id="id",
                        v-observe-visibility="setActive",
                        title="Certificaten",
-                       subtitle="Lorem ipsum dolor sit amet")
+                       subtitle="Voor specialistische kennis")
     experiences(v-for="(vocational, index) in vocationals",
                 :title="vocational.issuingAuthority",
                 :experiences="vocational.accreditations",

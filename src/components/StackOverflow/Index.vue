@@ -9,7 +9,7 @@
                              :badge="badge",
                              :key="index")
     stack-overflow-description
-      a.asbestos(href="https://stackoverflow.com/",
+      a.concrete(href="https://stackoverflow.com/",
                  target="_blank",
                  rel="noopener") Stack Overflow
       |

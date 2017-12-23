@@ -11,7 +11,7 @@
       |
       | ben je altijd in beweging. Hard werken vertaald zich in het aantal toetsaanslagen en muisklikken. En een echte ICT'er houdt natuurlijk netjes deze lichaamsbeweging bij. Dat wil zeggen: laten bijhouden door
       |
-      a.asbestos(href="http://www.whatpulse.org/",
+      a.concrete(href="http://www.whatpulse.org/",
                  target="_blank",
                  rel="noopener") Whatpulse
       |. Want wat je door de ICT kan laten doen, doe je niet zelf.

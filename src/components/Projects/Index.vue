@@ -1,7 +1,7 @@
 <template lang="pug">
   projects-section(:id="id",
                      title="Projecten",
-                     subtitle="Lorem ipsum dolor sit amet",
+                     subtitle="Voorbeelden van gerealiseerd werk",
                      v-observe-visibility="setActive")
         cv-download
 </template>

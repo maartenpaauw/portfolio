@@ -16,8 +16,13 @@ const specific = ({ commit }, payload) => {
   commit('specific', payload)
 }
 
+const toggleIrrelevant = ({ commit }) => {
+  commit('toggleIrrelevant')
+}
+
 export default {
   previous,
   next,
-  specific
+  specific,
+  toggleIrrelevant
 }

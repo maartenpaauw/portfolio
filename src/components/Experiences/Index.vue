@@ -3,10 +3,13 @@
     .col-2
       strong.text-uppercase.midnight-blue(v-html="title")
     .col
-      .row
+      transition-group.row(tag="div",
+                           enter-active-class="animated fadeIn",
+                           leave-active-class="animated fadeOut")
         .col-12(v-for="(experience, index) in experiences",
-                :key="index")
-          experience(:experience="experience")
+                :key="index",
+                :class="classes(index)")
+            experience(:experience="experience")
 </template>
 
 <script>
@@ -26,6 +29,11 @@
     },
     components: {
       Experience: Experience
+    },
+    methods: {
+      classes (index) {
+        return this.experiences.length - 1 === index ? 'mb-0' : 'mb-5'
+      }
     }
   }
 </script>

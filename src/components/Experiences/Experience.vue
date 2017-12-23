@@ -13,7 +13,7 @@
         i.fa.mr-2(:class="icon")
         span(v-html="subtitle")
       p.silver.summary.fw1.lh-2(v-html="summary")
-      hr.mt-3.mb-5
+      hr.mt-3.mb-0.border-clouds
     .col-4.text-right.small.silver
       p.d-flex.align-items-center
           i.fa.fa-calendar.mr-2.ml-auto

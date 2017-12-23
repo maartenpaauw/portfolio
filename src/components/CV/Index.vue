@@ -10,6 +10,8 @@
     cv-experiences(title="Werkervaring",
                    :experiences="_work")
 
+    cv-toggle
+
     cv-experiences(title="Vrijwillig",
                    :experiences="_volunteer")
     cv-download
@@ -22,6 +24,7 @@
   import Section from '@/components/Helpers/Section'
   import Experiences from '@/components/Experiences/Index'
   import Download from '@/components/Helpers/Download'
+  import Toggle from '@/components/CV/Toggle'
 
   import active from '@/mixins/active'
 
@@ -30,7 +33,8 @@
     components: {
       cvSection: Section,
       cvExperiences: Experiences,
-      cvDownload: Download
+      cvDownload: Download,
+      cvToggle: Toggle
     },
     data () {
       return {
@@ -38,13 +42,16 @@
       }
     },
     computed: {
+      ...mapGetters([
+        'irrelevant'
+      ]),
       ...mapGetters('resume', [
-        'work',
+        'relevant',
         'education',
         'volunteer'
       ]),
       _work () {
-        return this.work.map((work) => {
+        return this.relevant.map((work) => {
           return {
             title: work.position,
             subtitle: work.name,

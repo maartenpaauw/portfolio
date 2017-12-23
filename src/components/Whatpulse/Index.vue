@@ -5,10 +5,21 @@
       whatpulse-stat(type="keys")
       whatpulse-stat(type="clicks")
     whatpulse-description
-      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis turpis quis nulla lobortis tincidunt. Phasellus aliquam odio elit, nec pretium velit dapibus sit amet. Curabitur nec vestibulum lectus. Donec laoreet porta nisl in lobortis. Ut nec metus velit. Sed nec elementum tortor. Quisque ac leo rutrum, congue lectus vitae, rutrum nibh. Donec faucibus elit eu iaculis blandit.
+      | Als
+      |
+      span(v-html="label")
+      |
+      | ben je altijd in beweging. Hard werken vertaald zich in het aantal toetsaanslagen en muisklikken. En een echte ICT'er houdt natuurlijk netjes deze lichaamsbeweging bij. Dat wil zeggen: laten bijhouden door
+      |
+      a.concrete(href="http://www.whatpulse.org/",
+                 target="_blank",
+                 rel="noopener") Whatpulse
+      |. Want wat je door de ICT kan laten doen, doe je niet zelf.
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
+
   import Section from '@/components/Helpers/Section'
   import Description from '@/components/Helpers/Description'
   import Stat from '@/components/Whatpulse/Stat'
@@ -19,6 +30,11 @@
       whatpulseSection: Section,
       whatpulseDescription: Description,
       whatpulseStat: Stat
+    },
+    computed: {
+      ...mapGetters('basics', [
+        'label'
+      ])
     }
   }
 </script>

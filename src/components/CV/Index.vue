@@ -1,7 +1,7 @@
 <template lang="pug">
   cv-section(:id="id",
              title="Curriculum Vitae",
-             subtitle="Hier heb ik mijn ervaringen opgedaan",
+             subtitle="Hier heb ik mijn kennis en ervaringen opgedaan",
              v-observe-visibility="setActive")
 
     cv-experiences(title="Opleidingen",

@@ -6,7 +6,7 @@
     "email": "maartenpaauw@gmail.com",
     "phone": "+31 (0)6 578 37 765",
     "website": "http://maartenpaauw.com/",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros mauris, lobortis at sem quis, porttitor accumsan dui. Mauris ut orci nec nibh elementum faucibus. Ut tristique nisl eu metus tempus, at ullamcorper lacus tincidunt. Quisque sodales mattis ligula eget mollis.",
+    "summary": "Welkom op mijn portfolio. Ik ben een [AGE] jarige enthousiaste [LABEL]. Hier vind je alle informatie over mij en mijn projecten. Kijk rustig rond en veel plezier! Als je vragen hebt hoor ik het graag.",
     "location": {
       "address": "Brouwerstraat 37",
       "postalCode": "2231 HN",
@@ -41,10 +41,10 @@
     {
       "name": "Appsketch",
       "description": "",
-      "position": "Eigenaar",
+      "position": "Zelfstandig ondernemer",
       "url": "http://www.appsketch.nl/",
       "startDate": "2012-01-01",
-      "summary": "Verkoop van schetsblokken voor iOS ontwikkelaars / ontwerpers. Ook kunt u bij Appsketch terecht voor grafisch ontwerp, denk daarbij aan het van ontwerpen huisstijlen, promotie materiaal, flyers, posters, logo's enzovoort. Ook kunt u terecht voor webdevelopment. Wij kijken graag samen met u wat de mogelijkheden zijn om de presentatie van uw bedrijf op alle terreinen te verbeteren. Lopende opdrachten: Station Drukwer Hoogenboom & Ravelli MSU Service  Opdrachten o.a. uitgevoerd voor: PEAMP Financial - Control & Interim Management Challenge 11 - Management, Finance & Control Rob van den Oever - Timmer-, klus- en onderhoudsbedrijf Paauw & van Duijvenbode B.V. LaQ - Nederland Zafer - Verbouwings-, Onderhouds- en Schildersbedrijf Vishandel Atlantic Cepa Webdiensten Paardenmarkt Rijnsburg.",
+      "summary": "Allround DTP en ICT bedrijf. Complete verzorging van uw grafisch ontwerp / huisstijl en al het drukwerk, websites en applicaties.",
       "highlights": []
     },
     {
@@ -75,16 +75,6 @@
       "startDate": "2012-05-01",
       "endDate": "2012-07-01",
       "summary": "Oproepkracht bij Olympia Uitzendbureau.",
-      "highlights": []
-    },
-    {
-      "name": "Maarten Paauw - maartenpaauw.com",
-      "description": "",
-      "position": "Allround DTP-er",
-      "url": "http://maartenpaauw.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Ik verricht alle voorkomende DTP opdrachten zoals: Ontwerpen huisstijlen, promotie materiaal, flyers, posters, logo's enzovoort. Opdrachten o.a. uitgevoerd voor: PEAMP Financial - Control & Interim Management. Challenge 11 - Management, Finance & Control. Rob van den Oever - Timmer-, klus- en onderhoudsbedrijf. Paauw & van Duijvenbode B.V. LaQ - Nederland. Zafer - Verbouwings-, Onderhouds- en Schildersbedrijf.",
       "highlights": []
     },
     {

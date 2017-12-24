@@ -41,7 +41,7 @@
     },
     async created () {
       try {
-        const response = await axios.get('https://api.stackexchange.com/2.2/users/2940668/badges?site=stackoverflow&order=asc&sort=rank&filter=default')
+        const response = await axios.get(`https://api.stackexchange.com/2.2/users/2940668/badges?site=stackoverflow&order=asc&sort=rank&filter=default&key=${process.env.STACK_EXCHANGE_KEY}`)
         this.badges = response.data.items
       } catch (err) {
         this.badges = null

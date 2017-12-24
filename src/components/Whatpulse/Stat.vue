@@ -64,7 +64,7 @@
       this.createInterval()
     },
     beforeDestroy () {
-      this.interval = null
+      clearInterval(this.interval)
     }
   }
 </script>

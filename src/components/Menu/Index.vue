@@ -3,13 +3,10 @@
                               toggle-breakpoint="lg",
                               :variant="variant",
                               :toggleable="true")
-
     .container
       b-nav-toggle.ml-3(target="nav_collapse")
-
       b-link.navbar-brand.my-3(v-scroll-to="'#header'")
         span.text-uppercase.text-white.px-3.py-1(v-html="name")
-
       b-collapse#nav_collapse(is-nav="is-nav")
         b-navbar-nav.ml-auto
           b-nav-item(v-for="(item, index) in items",

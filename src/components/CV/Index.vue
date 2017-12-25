@@ -3,15 +3,11 @@
              title="Curriculum Vitae",
              subtitle="Hier heb ik mijn kennis en ervaringen opgedaan",
              v-observe-visibility="setActive")
-
     cv-experiences(title="Opleidingen",
                    :experiences="_education")
-
     cv-experiences(title="Werkervaring",
                    :experiences="_work")
-
     cv-toggle
-
     cv-experiences(title="Vrijwillig",
                    :experiences="_volunteer")
     cv-download

@@ -6,7 +6,6 @@
                       :title="title",
                       :subtitle="subtitle")
         slot
-
       template(v-else="")
         section-title(v-if="visible",
                       :title="title",

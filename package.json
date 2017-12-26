@@ -46,7 +46,7 @@
     "lodash": "4.17.4",
     "moment": "2.20.1",
     "slugify": "1.2.8",
-    "typeface-montserrat": "0.0.31",
+    "typeface-montserrat": "0.0.45",
     "vue": "2.5.13",
     "vue-analytics": "5.7.1",
     "vue-countup-v2": "0.1.2",
@@ -63,7 +63,7 @@
     "@commitlint/config-conventional": "5.2.3",
     "autoprefixer": "7.2.3",
     "babel-core": "6.26.0",
-    "babel-eslint": "8.1.0",
+    "babel-eslint": "8.1.1",
     "babel-loader": "7.1.2",
     "babel-plugin-istanbul": "4.1.5",
     "babel-plugin-transform-runtime": "6.23.0",
@@ -151,10 +151,7 @@
   },
   "greenkeeper": {
     "branchPrefix": "dependency-update-",
-    "label": "dependency-update",
-    "ignore": [
-      "typeface-montserrat"
-    ]
+    "label": "dependency-update"
   },
   "engines": {
     "node": ">= 4.0.0",

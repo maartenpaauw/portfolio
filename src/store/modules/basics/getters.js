@@ -1,32 +1,32 @@
 export default {
-  name: state => {
-    return state.name
+  name: (state, getters, rootState) => {
+    return rootState.resume.basics.name
   },
-  label: state => {
-    return state.label
+  label: (state, getters, rootState) => {
+    return rootState.resume.basics.label
   },
-  image: state => {
-    return state.image
+  image: (state, getters, rootState) => {
+    return rootState.resume.basics.image
   },
-  email: state => {
-    return state.email
+  email: (state, getters, rootState) => {
+    return rootState.resume.basics.email
   },
-  mailto: state => {
-    return `mailto:${state.email}`
+  mailto: (state, getters, rootState) => {
+    return `mailto:${rootState.resume.basics.email}`
   },
-  phone: state => {
-    return state.phone
+  phone: (state, getters, rootState) => {
+    return rootState.resume.basics.phone
   },
-  website: state => {
-    return state.website
+  website: (state, getters, rootState) => {
+    return rootState.resume.basics.website
   },
-  summary: state => {
-    return state.summary
+  summary: (state, getters, rootState) => {
+    return rootState.resume.basics.summary
   },
-  location: state => {
-    return state.location
+  location: (state, getters, rootState) => {
+    return rootState.resume.basics.location
   },
-  profiles: state => {
-    return state.profiles
+  profiles: (state, getters, rootState) => {
+    return rootState.resume.basics.profiles
   }
 }

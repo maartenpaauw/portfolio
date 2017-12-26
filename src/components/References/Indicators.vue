@@ -18,12 +18,12 @@
       }
     },
     computed: {
-      ...mapGetters([
+      ...mapGetters('references', [
         'index'
       ])
     },
     methods: {
-      ...mapActions([
+      ...mapActions('references', [
         'specific'
       ]),
       classes (index) {

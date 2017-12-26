@@ -45,8 +45,10 @@
     },
     computed: {
       ...mapGetters('resume', [
-        'reference',
         'references'
+      ]),
+      ...mapGetters('references', [
+        'reference'
       ])
     },
     mixins: [

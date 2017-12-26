@@ -25,7 +25,7 @@
       }
     },
     methods: {
-      ...mapActions([
+      ...mapActions('references', [
         'next',
         'previous'
       ]),

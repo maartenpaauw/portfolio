@@ -39,8 +39,5 @@ export default {
   },
   vocational: state => {
     return state.vocational
-  },
-  reference: (state, getters, rootState) => {
-    return getters.references[rootState.reference.index]
   }
 }

@@ -44,7 +44,7 @@
       cvDownload: Download
     },
     computed: {
-      ...mapGetters('resume', [
+      ...mapGetters('references', [
         'reference',
         'references'
       ])

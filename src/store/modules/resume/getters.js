@@ -5,11 +5,6 @@ export default {
   work: state => {
     return state.work
   },
-  relevant: (state, getters, rootState) => {
-    return getters.work.filter((work) => {
-      return rootState.work.irrelevant ? work.relevant : true
-    })
-  },
   volunteer: state => {
     return state.volunteer
   },
@@ -39,8 +34,5 @@ export default {
   },
   vocational: state => {
     return state.vocational
-  },
-  reference: (state, getters, rootState) => {
-    return getters.references[rootState.reference.index]
   }
 }

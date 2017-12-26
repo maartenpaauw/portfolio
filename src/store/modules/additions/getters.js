@@ -1,20 +1,23 @@
 export default {
-  birthday: state => {
-    return state.birthday
+  additions: (state, getters, rootState) => {
+    return rootState.resume.additions
   },
-  birthplace: state => {
-    return state.birthplace
+  birthday: (state, getters) => {
+    return getters.additions.birthday
   },
-  gender: state => {
-    return state.gender
+  birthplace: (state, getters) => {
+    return getters.additions.birthplace
   },
-  nationality: state => {
-    return state.nationality
+  gender: (state, getters) => {
+    return getters.additions.gender
   },
-  marital_status: state => {
-    return state.marital_status
+  nationality: (state, getters) => {
+    return getters.additions.nationality
   },
-  drivers_license: state => {
-    return state.drivers_license
+  marital_status: (state, getters) => {
+    return getters.additions.marital_status
+  },
+  drivers_license: (state, getters) => {
+    return getters.additions.drivers_license
   }
 }

@@ -38,11 +38,11 @@
       }
     },
     computed: {
-      ...mapGetters([
-        'irrelevant'
+      ...mapGetters('work', [
+        'irrelevant',
+        'relevant'
       ]),
       ...mapGetters('resume', [
-        'relevant',
         'education',
         'volunteer'
       ]),

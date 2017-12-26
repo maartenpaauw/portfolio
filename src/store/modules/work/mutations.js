@@ -1,5 +1,5 @@
 const toggleIrrelevant = (state, payload) => {
-  state.work.irrelevant = !state.work.irrelevant
+  state.irrelevant = !state.irrelevant
 }
 
 export default {

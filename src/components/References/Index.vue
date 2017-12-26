@@ -44,11 +44,9 @@
       cvDownload: Download
     },
     computed: {
-      ...mapGetters('resume', [
-        'references'
-      ]),
       ...mapGetters('references', [
-        'reference'
+        'reference',
+        'references'
       ])
     },
     mixins: [

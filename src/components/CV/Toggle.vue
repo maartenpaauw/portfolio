@@ -14,7 +14,7 @@
   export default {
     name: 'cv-toggle',
     computed: {
-      ...mapGetters([
+      ...mapGetters('work', [
         'irrelevant'
       ]),
       text () {
@@ -25,7 +25,7 @@
       }
     },
     methods: {
-      ...mapActions([
+      ...mapActions('work', [
         'toggleIrrelevant'
       ])
     }

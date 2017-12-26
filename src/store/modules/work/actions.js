@@ -1,4 +1,3 @@
-
 const toggleIrrelevant = ({ commit }) => {
   commit('toggleIrrelevant')
 }

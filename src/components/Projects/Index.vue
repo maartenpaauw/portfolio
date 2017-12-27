@@ -4,7 +4,7 @@
                      subtitle="Voorbeelden van gerealiseerd werk",
                      v-observe-visibility="setActive")
     projects-categories
-    .row
+    b-card-group.row.mt-5
       projects-project(v-for="(project, index) in filtered",
                        :project="project",
                        :key="index")

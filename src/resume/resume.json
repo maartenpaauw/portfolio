@@ -324,16 +324,14 @@
       "name": "Nummering",
       "description": "Een gemakkelijke data merge tool voor InDesign.",
       "highlights": [],
-      "keywords": [
-        "Web Development"
-      ],
+      "keywords": [],
       "startDate": "2017-06-01",
       "url": "http://www.nummering.nl/",
       "roles": [
-        "Eigenaar"
+        "Developer"
       ],
       "entity": "Appsketch",
-      "type": "application"
+      "type": "Web Development"
     }
   ]
 }

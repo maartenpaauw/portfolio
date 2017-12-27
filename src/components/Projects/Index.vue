@@ -29,8 +29,8 @@
       cvDownload: Download
     },
     computed: {
-      ...mapGetters('resume', [
-        'projects'
+      ...mapGetters('projects', [
+        'filtered'
       ])
     },
     mixins: [

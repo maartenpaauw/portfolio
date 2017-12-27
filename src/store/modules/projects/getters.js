@@ -1,3 +1,5 @@
+import _ from 'lodash'
+
 export default {
   projects: (state, getters, rootState) => {
     return rootState.resume.projects
@@ -6,11 +8,12 @@ export default {
     return state.index
   },
   categories: (state, getters) => {
-    return [
-      'Alles',
-      'Drukwerk',
-      'Logo',
-      'Web development'
-    ]
+    const categories = ['Alles']
+
+    _.each(getters.projects, (project) => {
+      categories.push(project.type)
+    })
+
+    return _.uniq(categories).sort()
   }
 }

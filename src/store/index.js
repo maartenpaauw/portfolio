@@ -4,6 +4,7 @@ import Vuex from 'vuex'
 import additions from './modules/additions'
 import basics from './modules/basics'
 import menu from './modules/menu'
+import projects from './modules/projects'
 import references from './modules/references'
 import resume from './modules/resume'
 import work from './modules/work'
@@ -15,6 +16,7 @@ export default new Vuex.Store({
     additions,
     basics,
     menu,
+    projects,
     references,
     resume,
     work

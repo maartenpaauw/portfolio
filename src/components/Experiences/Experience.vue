@@ -5,7 +5,7 @@
         strong.midnight-blue(v-html="title")
         b-badge.ml-2.white(v-if="recent",
                            variant="warning",
-                           tag="sup") nieuw
+                           tag="sup") Nieuw
       p(v-if="website")
         a.concrete.d-flex.align-items-center.hover-asbestos.hover-text-decoration-none.transition-400(:href="website", 
                                                                                                       target="_blank",

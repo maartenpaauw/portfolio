@@ -1,8 +1,11 @@
 <template lang="pug">
   .row
     .col-8
-      p
-        strong.text-uppercase.midnight-blue(v-html="title")
+      p.text-uppercase
+        strong.midnight-blue(v-html="title")
+        b-badge.ml-2.white(v-if="recent",
+                           variant="warning",
+                           tag="sup") nieuw
       p(v-if="website")
         a.concrete.d-flex.align-items-center.hover-asbestos.hover-text-decoration-none.transition-400(:href="website", 
                                                                                                       target="_blank",
@@ -53,7 +56,16 @@
       },
       end () {
         return typeof this.experience.end === 'undefined' ? 'Huidig' : this.$moment(this.experience.end).format('MMMM YYYY')
+      },
+      recent () {
+        return this.$moment().subtract(1, 'month') <= this.$moment(this.experience.start)
       }
     }
   }
 </script>
+
+<style lang="scss" scoped>
+  sup {
+    top: -0.15em;
+  }
+</style>

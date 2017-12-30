@@ -34,7 +34,7 @@
     },
     computed: {
       description () {
-        const description = 'Het platform stackoverlfow.com is er voor professionele programmeurs om kennis te delen en op te doen. Hier kan je door vragen te stellen en te beantwoorden badges verdienen. Hierboven zie je de badges die ik gehaald heb. Als je op de badge klikt zie je meer informatie over de badge. Neem rustig een kijkje.'
+        const description = 'Het platform stackoverflow.com is er voor professionele programmeurs om kennis te delen en op te doen. Hier kan je door vragen te stellen en te beantwoorden badges verdienen. Hierboven zie je de badges die ik gehaald heb. Als je op de badge klikt zie je meer informatie over de badge. Neem rustig een kijkje.'
         return autolinker.link(description, {
           className: 'concrete'
         })

@@ -26,7 +26,6 @@
     computed: {
       ...mapGetters('basics', [
         'name',
-        'email',
         'mailto'
       ]),
       year () {

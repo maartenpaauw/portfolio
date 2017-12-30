@@ -8,8 +8,8 @@
 </template>
 
 <script>
-  import Gravatar from 'vue-gravatar'
   import { mapGetters } from 'vuex'
+  import Gravatar from 'vue-gravatar'
 
   export default {
     name: 'header-image',

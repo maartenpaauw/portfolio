@@ -13,9 +13,9 @@
 <script>
   import { mapGetters } from 'vuex'
 
-  import Section from '@/components/Helpers/Section'
-  import Experiences from '@/components/Experiences/Index'
   import Download from '@/components/Helpers/Download'
+  import Experiences from '@/components/Experiences/Index'
+  import Section from '@/components/Helpers/Section'
 
   import active from '@/mixins/active'
 

@@ -1,8 +1,8 @@
 <template lang="pug">
   introduction-section(:id="id", 
-                       v-observe-visibility="setActive",
                        :title="name",
-                       :subtitle="label")
+                       :subtitle="label",
+                       v-observe-visibility="setActive")
     .row.my-5(v-observe-visibility="setActive")
       .col
         introduction-information(label="Functie",
@@ -14,11 +14,11 @@
             span.d-block(v-html="`${location.postalCode} ${location.city}`")
             span.d-block(v-html="location.region")
         introduction-link(label="E-mailadres",
-                         :href="mailto",
-                         :value="email")
+                          :href="mailto",
+                          :value="email")
         introduction-link(label="Mobiel",
-                         :href="tel",
-                         :value="phone")
+                          :href="tel",
+                          :value="phone")
         introduction-information(label="Geboren",
                                  :value="born")
         introduction-information(label="Nationaliteit",
@@ -33,7 +33,7 @@
                                  :value="licenses")
       .col
         introduction-summary
-        introduction-signature(:name="name")
+        introduction-signature
     cv-download
 </template>
 

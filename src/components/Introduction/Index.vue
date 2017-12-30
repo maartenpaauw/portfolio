@@ -45,10 +45,10 @@
   import Signature from '@/components/Introduction/Signature'
   import Information from '@/components/Introduction/Information'
   import Languages from '@/components/Introduction/Languages'
-  import Download from '@/components/Helpers/Download'
   import Summary from '@/components/Introduction/Summary'
 
   import active from '@/mixins/active'
+  import download from '@/mixins/download'
 
   export default {
     name: 'portfolio-introduction',
@@ -63,8 +63,7 @@
       IntroductionInformation: Information,
       IntroductionSignature: Signature,
       introductionLanguages: Languages,
-      introductionSummary: Summary,
-      cvDownload: Download
+      introductionSummary: Summary
     },
     computed: {
       ...mapGetters('basics', [
@@ -97,7 +96,8 @@
       }
     },
     mixins: [
-      active
+      active,
+      download
     ]
   }
 </script>

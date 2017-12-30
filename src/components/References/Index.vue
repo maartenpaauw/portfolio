@@ -22,12 +22,12 @@
   import { mapGetters } from 'vuex'
   
   import Control from '@/components/References/Control'
-  import Download from '@/components/Helpers/Download'
   import Indicators from '@/components/References/Indicators'
   import Reference from '@/components/References/Reference'
   import Section from '@/components/Helpers/Section'
 
   import active from '@/mixins/active'
+  import download from '@/mixins/download'
 
   export default {
     name: 'portfolio-references',
@@ -40,8 +40,7 @@
       referencesSection: Section,
       referencesControl: Control,
       referencesIndicators: Indicators,
-      reference: Reference,
-      cvDownload: Download
+      reference: Reference
     },
     computed: {
       ...mapGetters('references', [
@@ -50,7 +49,8 @@
       ])
     },
     mixins: [
-      active
+      active,
+      download
     ]
   }
 </script>

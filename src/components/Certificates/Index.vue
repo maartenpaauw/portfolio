@@ -13,11 +13,11 @@
 <script>
   import { mapGetters } from 'vuex'
 
-  import Download from '@/components/Helpers/Download'
   import Experiences from '@/components/Experiences/Index'
   import Section from '@/components/Helpers/Section'
 
   import active from '@/mixins/active'
+  import download from '@/mixins/download'
 
   export default {
     name: 'portfolio-certificates',
@@ -28,8 +28,7 @@
     },
     components: {
       certificatesSection: Section,
-      experiences: Experiences,
-      cvDownload: Download
+      experiences: Experiences
     },
     computed: {
       ...mapGetters('resume', [
@@ -54,7 +53,8 @@
       }
     },
     mixins: [
-      active
+      active,
+      download
     ]
   }
 </script>

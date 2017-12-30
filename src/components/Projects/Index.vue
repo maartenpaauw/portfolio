@@ -15,11 +15,11 @@
   import { mapGetters } from 'vuex'
 
   import Categories from '@/components/Projects/Categories'
-  import Download from '@/components/Helpers/Download'
   import Project from '@/components/Projects/Project'
   import Section from '@/components/Helpers/Section'
 
   import active from '@/mixins/active'
+  import download from '@/mixins/download'
 
   export default {
     name: 'portfolio-projects',
@@ -31,8 +31,7 @@
     components: {
       projectsSection: Section,
       projectsCategories: Categories,
-      projectsProject: Project,
-      cvDownload: Download
+      projectsProject: Project
     },
     computed: {
       ...mapGetters('projects', [
@@ -40,7 +39,8 @@
       ])
     },
     mixins: [
-      active
+      active,
+      download
     ]
   }
 </script>

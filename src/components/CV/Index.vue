@@ -17,12 +17,12 @@
   import { mapGetters } from 'vuex'
   import slugify from 'slugify'
 
-  import Download from '@/components/Helpers/Download'
   import Experiences from '@/components/Experiences/Index'
   import Section from '@/components/Helpers/Section'
   import Toggle from '@/components/CV/Toggle'
 
   import active from '@/mixins/active'
+  import download from '@/mixins/download'
 
   export default {
     name: 'portfolio-cv',
@@ -34,7 +34,6 @@
     components: {
       cvSection: Section,
       cvExperiences: Experiences,
-      cvDownload: Download,
       cvToggle: Toggle
     },
     computed: {
@@ -95,7 +94,8 @@
       }
     },
     mixins: [
-      active
+      active,
+      download
     ]
   }
 </script>

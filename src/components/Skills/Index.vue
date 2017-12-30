@@ -15,9 +15,9 @@
   
   import Section from '@/components/Helpers/Section'
   import Group from '@/components/Skills/Group'
-  import Download from '@/components/Helpers/Download'
 
   import active from '@/mixins/active'
+  import download from '@/mixins/download'
 
   export default {
     name: 'portfolio-skills',
@@ -28,8 +28,7 @@
     },
     components: {
       skillsSection: Section,
-      skillsGroup: Group,
-      cvDownload: Download
+      skillsGroup: Group
     },
     computed: {
       ...mapGetters('resume', [
@@ -37,7 +36,8 @@
       ])
     },
     mixins: [
-      active
+      active,
+      download
     ]
   }
 </script>

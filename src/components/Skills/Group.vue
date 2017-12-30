@@ -6,8 +6,8 @@
       .col-10
         .row.mt-3.mb-4
           skills-keyword(v-for="(keyword, index) in keywords",
-                  :keyword="keyword",
-                  :key="index")
+                         :keyword="keyword",
+                         :key="index")
 </template>
 
 <script>

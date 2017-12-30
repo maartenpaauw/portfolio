@@ -21,11 +21,11 @@
 <script>
   import { mapGetters } from 'vuex'
   
-  import Section from '@/components/Helpers/Section'
   import Control from '@/components/References/Control'
-  import Reference from '@/components/References/Reference'
-  import Indicators from '@/components/References/Indicators'
   import Download from '@/components/Helpers/Download'
+  import Indicators from '@/components/References/Indicators'
+  import Reference from '@/components/References/Reference'
+  import Section from '@/components/Helpers/Section'
 
   import active from '@/mixins/active'
 

@@ -1,7 +1,7 @@
 <template lang="pug">
   .col-6.text-center
-    b-card.m-0.mb-4(img-src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-                    :overlay="true",
+    b-card.m-0.mb-4(:overlay="true",
+                    img-src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
                     body-class="d-flex")
       .m-auto
         h4.card-title.white(v-html="project.name")
@@ -14,6 +14,7 @@
 
 <script>
   import Button from '@/components/Helpers/Button'
+
   export default {
     name: 'projects-project',
     props: {

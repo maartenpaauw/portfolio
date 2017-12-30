@@ -9,6 +9,9 @@
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
+  import slugify from 'slugify'
+
   import Button from '@/components/Helpers/Button'
 
   export default {
@@ -17,8 +20,11 @@
       download: Button
     },
     computed: {
+      ...mapGetters('basics', [
+        'name'
+      ]),
       cv () {
-        return '#' // TODO: CV download link
+        return `./static/${slugify(this.name).toLowerCase()}.pdf`
       }
     }
   }

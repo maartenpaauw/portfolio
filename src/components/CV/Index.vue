@@ -1,8 +1,8 @@
 <template lang="pug">
   cv-section(:id="id",
+             v-observe-visibility="setActive",
              title="Curriculum Vitae",
-             subtitle="Hier heb ik mijn kennis en ervaringen opgedaan",
-             v-observe-visibility="setActive")
+             subtitle="Hier heb ik mijn kennis en ervaringen opgedaan")
     cv-experiences(title="Opleidingen",
                    :experiences="_education")
     cv-experiences(title="Werkervaring",
@@ -17,25 +17,24 @@
   import { mapGetters } from 'vuex'
   import slugify from 'slugify'
 
-  import Section from '@/components/Helpers/Section'
   import Experiences from '@/components/Experiences/Index'
-  import Download from '@/components/Helpers/Download'
+  import Section from '@/components/Helpers/Section'
   import Toggle from '@/components/CV/Toggle'
 
   import active from '@/mixins/active'
+  import download from '@/mixins/download'
 
   export default {
     name: 'portfolio-cv',
-    components: {
-      cvSection: Section,
-      cvExperiences: Experiences,
-      cvDownload: Download,
-      cvToggle: Toggle
-    },
     data () {
       return {
         id: 'cv'
       }
+    },
+    components: {
+      cvSection: Section,
+      cvExperiences: Experiences,
+      cvToggle: Toggle
     },
     computed: {
       ...mapGetters('work', [
@@ -95,7 +94,8 @@
       }
     },
     mixins: [
-      active
+      active,
+      download
     ]
   }
 </script>

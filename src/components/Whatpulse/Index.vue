@@ -5,20 +5,12 @@
       whatpulse-stat(type="keys")
       whatpulse-stat(type="clicks")
     whatpulse-description
-      | Als
-      |
-      span(v-html="label")
-      |
-      | ben je altijd in beweging. Hard werken vertaald zich in het aantal toetsaanslagen en muisklikken. En een echte ICT'er houdt natuurlijk netjes deze lichaamsbeweging bij. Dat wil zeggen: laten bijhouden door
-      |
-      a.concrete(href="http://www.whatpulse.org/",
-                 target="_blank",
-                 rel="noopener") Whatpulse
-      |. Want wat je door de ICT kan laten doen, doe je niet zelf.
+      span(v-html="description")
 </template>
 
 <script>
   import { mapGetters } from 'vuex'
+  import autolinker from 'autolinker'
 
   import Section from '@/components/Helpers/Section'
   import Description from '@/components/Helpers/Description'
@@ -34,7 +26,13 @@
     computed: {
       ...mapGetters('basics', [
         'label'
-      ])
+      ]),
+      description () {
+        const description = `Als ${this.label} ben je altijd in beweging. Hard werken vertaald zich in het aantal toetsaanslagen en muisklikken. En een echte ICT'er houdt natuurlijk netjes deze lichaamsbeweging bij. Dat wil zeggen: laten bijhouden door whatpulse.org. Want wat je door de ICT kan laten doen, doe je niet zelf.`
+        return autolinker.link(description, {
+          className: 'concrete'
+        })
+      }
     }
   }
 </script>

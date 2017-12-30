@@ -9,19 +9,12 @@
                              :badge="badge",
                              :key="index")
     stack-overflow-description
-      a.concrete(href="https://stackoverflow.com/",
-                 target="_blank",
-                 rel="noopener") Stack Overflow
-      |
-      | is
-      |
-      i het
-      |
-      | platform voor professionele programmeurs om kennis te delen en op te doen. Hier kan je door vragen te stellen en te beantwoorden badges verdienen. Hierboven zie je de badges die ik gehaald heb. Als je op de badge klikt zie je meer informatie over de badge. Neem rustig een kijkje.
+      span(v-html="description")
 </template>
 
 <script>
   import axios from 'axios'
+  import autolinker from 'autolinker'
 
   import Section from '@/components/Helpers/Section'
   import Description from '@/components/Helpers/Description'
@@ -38,6 +31,14 @@
       stackOverflowSection: Section,
       stackOverflowDescription: Description,
       stackOverflowBadge: Badge
+    },
+    computed: {
+      description () {
+        const description = 'Het platform stackoverlfow.com is er voor professionele programmeurs om kennis te delen en op te doen. Hier kan je door vragen te stellen en te beantwoorden badges verdienen. Hierboven zie je de badges die ik gehaald heb. Als je op de badge klikt zie je meer informatie over de badge. Neem rustig een kijkje.'
+        return autolinker.link(description, {
+          className: 'concrete'
+        })
+      }
     },
     async created () {
       try {

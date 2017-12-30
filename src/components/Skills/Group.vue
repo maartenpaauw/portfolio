@@ -5,9 +5,9 @@
         strong.text-uppercase.midnight-blue(v-html="skill.name")
       .col-10
         .row.mt-3.mb-4
-          keyword(v-for="(keyword, index) in keywords",
-                  :keyword="keyword",
-                  :key="index")
+          skills-keyword(v-for="(keyword, index) in keywords",
+                         :keyword="keyword",
+                         :key="index")
 </template>
 
 <script>
@@ -22,7 +22,7 @@
       }
     },
     components: {
-      keyword: Keyword
+      skillsKeyword: Keyword
     },
     computed: {
       keywords () {

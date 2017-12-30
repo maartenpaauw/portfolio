@@ -5,15 +5,14 @@
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
+
   export default {
     name: 'introduction-signature',
-    props: {
-      name: {
-        required: true,
-        type: String
-      }
-    },
     computed: {
+      ...mapGetters('basics', [
+        'name'
+      ]),
       signature () {
         return `${this.name}}`
       }

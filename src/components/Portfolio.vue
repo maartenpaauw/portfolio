@@ -6,10 +6,8 @@
     portfolio-cv
     portfolio-whatpulse
     portfolio-certificates
-    //- portfolio-other
     portfolio-internship(:internship="iternships[0]")
     portfolio-skills
-    //- portfolio-other
     portfolio-internship(:internship="iternships[1]")
     portfolio-references
     portfolio-interests
@@ -27,7 +25,6 @@
   import Interests from '@/components/Interests/Index'
   import Footer from '@/components/Footer/Index'
   import References from '@/components/References/Index'
-  import Other from '@/components/Other/Index'
   import Projects from '@/components/Projects/Index'
   import Skills from '@/components/Skills/Index'
   import Certificates from '@/components/Certificates/Index'
@@ -57,7 +54,6 @@
       portfolioWhatpulse: Whatpulse,
       portfolioInterests: Interests,
       portfolioReferences: References,
-      portfolioOther: Other,
       portfolioProjects: Projects,
       portfolioSkills: Skills,
       portfolioCertificates: Certificates,

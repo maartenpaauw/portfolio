@@ -1,7 +1,7 @@
 <template lang="pug">
   span.silver.fw2.lh-2
     p Beste bezoeker,
-    p(v-html="replacedSummary")
+    p(v-html="_summary")
 </template>
 
 <script>
@@ -20,7 +20,7 @@
       age () {
         return this.$moment().diff(this.birthday, 'years')
       },
-      replacedSummary () {
+      _summary () {
         return this.summary
           .replace('[AGE]', this.age)
           .replace('[LABEL]', this.label)

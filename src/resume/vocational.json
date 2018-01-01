@@ -5,6 +5,14 @@
       "website": "https://www.udemy.com/",
       "accreditations":[
         {
+          "title": "Regex Academy: An Introduction To Text Parsing Sorcery",
+          "website": "https://www.udemy.com/regex-academy-an-introduction-to-text-parsing-sorcery/",
+          "verification": "/static/vocational/udemy/UC-5OKCFMFF.pdf",
+          "achievedDate": "2017-12-31",
+          "expireDate": "",
+          "doesNotExpire": "true"
+        },
+        {
           "title": "The Complete Node.js Developer Course",
           "website": "https://www.udemy.com/the-complete-nodejs-developer-course-2/",
           "verification": "/static/vocational/udemy/UC-FHAK48RX.pdf",

@@ -2,10 +2,10 @@
   .row
     .col-8
       p.text-uppercase
-        strong.midnight-blue(v-html="title")
-        b-badge.ml-2.white(v-if="recent",
+        b-badge.mr-2.white(v-if="recent",
                            variant="warning",
                            tag="sup") Nieuw
+        strong.midnight-blue(v-html="title")
       p(v-if="website")
         a.concrete.d-flex.align-items-center.hover-asbestos.hover-text-decoration-none.transition-400(:href="website", 
                                                                                                       target="_blank",

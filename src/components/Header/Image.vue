@@ -1,6 +1,6 @@
 <template lang="pug">
   b-container.h-25(:fluid="true")
-    .row.h-100
+    b-row.h-100
       .col.text-center
         vue-gravatar(:email="email",
                      :size="200",

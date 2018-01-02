@@ -2,7 +2,7 @@
   section#copyright
     b-container.bg-wet-asphalt(:fluid="true")
       b-container
-        .row.text-center
+        b-row.text-center
           .col
             p.m-2.small.midnight-blue
               i.fa.fa-heart-o.mr-2

@@ -1,5 +1,5 @@
 <template lang="pug">
-  .row.my-5
+  b-row.my-5
     .col.text-center
       h1.h3.midnight-blue.font-weight-bold.text-uppercase(v-html="title")
       span.fw2.silver(v-html="subtitle")

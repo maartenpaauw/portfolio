@@ -1,5 +1,5 @@
 <template lang="pug">
-  .row
+  b-row
     .col-8
       p.text-uppercase
         b-badge.mr-2.white.bg-orange(v-if="recent",

@@ -1,7 +1,7 @@
 <template lang="pug">
   whatpulse-section(id="whatpulse",
                     background-color="clouds")
-    .row.text-center
+    b-row.text-center
       whatpulse-stat(type="keys")
       whatpulse-stat(type="clicks")
     whatpulse-description

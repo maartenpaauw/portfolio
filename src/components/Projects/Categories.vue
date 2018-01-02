@@ -1,5 +1,5 @@
 <template lang="pug">
-  .row
+  b-row
     .col.text-center
       projects-category(v-for="(category, index) in categories",
                         :category="category",

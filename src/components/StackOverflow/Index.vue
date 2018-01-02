@@ -3,7 +3,7 @@
                          background-color="clouds",
                          title="Stack Overflow",
                          subtitle="Ervaring delen is kennis vermenigvuldigen")
-    .row.justify-content-center
+    b-row(align-h="center")
       .col-8.text-center
         stack-overflow-badge(v-for="(badge, index) in badges",
                              :badge="badge",

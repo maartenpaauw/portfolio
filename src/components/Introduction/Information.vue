@@ -1,5 +1,5 @@
 <template lang="pug">
-  .row
+  b-row
     .col-4
       p.mb-0.text-uppercase.midnight-blue.lh-2(v-html="label")
     .col

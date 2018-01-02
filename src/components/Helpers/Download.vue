@@ -1,5 +1,5 @@
 <template lang="pug">
-  .row
+  b-row
     .col.mb-5
       download.btn-sm(:href="cv",
                       target="_blank",

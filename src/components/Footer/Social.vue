@@ -1,5 +1,5 @@
 <template lang="pug">
-  .row
+  b-row
     .col.text-center
       span(v-for="(profile, index) in profiles",
            :key="index")

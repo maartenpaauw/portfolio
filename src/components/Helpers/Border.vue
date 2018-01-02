@@ -1,5 +1,5 @@
 <template lang="pug">
-  .row.justify-content-center.my-4
+  b-row.my-4(align-h="center")
     .col-1
       hr.bg-midnight-blue
 </template>

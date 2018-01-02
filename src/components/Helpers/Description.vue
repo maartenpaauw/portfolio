@@ -1,5 +1,5 @@
 <template lang="pug">
-  .row.mt-5.justify-content-center
+  b-row.mt-5(align-h="center")
     .col-8.text-center
       span.small.silver.lh-2
         p.mb-0

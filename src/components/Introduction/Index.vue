@@ -3,7 +3,7 @@
                        :title="name",
                        :subtitle="label",
                        v-observe-visibility="setActive")
-    .row.my-5(v-observe-visibility="setActive")
+    b-row.my-5(v-observe-visibility="setActive")
       .col
         introduction-information(label="Functie",
                                  :value="label")

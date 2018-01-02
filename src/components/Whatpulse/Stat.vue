@@ -1,5 +1,5 @@
 <template lang="pug">
-  .col
+  b-col
     h1.midnight-blue
       vue-count-up(:end="count",
                    :options="options")

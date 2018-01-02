@@ -3,17 +3,17 @@
                      title="Referenties",
                      subtitle="Wat vinden mensen van mij?",
                      v-observe-visibility="setActive")
-    .row
+    b-row
       references-control(direction="previous")
-      .col-8
-        .row
+      b-col(cols="8")
+        b-row
           transition(:duration="500",
                      enter-active-class="animated fadeIn",
                      leave-active-class="animated fadeOut",
                      mode="out-in")
             reference(:reference="reference", :key="reference.name")
       references-control(direction="next")
-    .row.mb-5
+    b-row.mb-5
       references-indicators(:references="references")
     cv-download
 </template>

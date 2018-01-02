@@ -3,8 +3,8 @@
                        :title="name",
                        :subtitle="label",
                        v-observe-visibility="setActive")
-    .row.my-5(v-observe-visibility="setActive")
-      .col
+    b-row.my-5(v-observe-visibility="setActive")
+      b-col
         introduction-information(label="Functie",
                                  :value="label")
         introduction-link(label="Adres",
@@ -31,7 +31,7 @@
                                  :value="marital_status")
         introduction-information(label="Rijbewijs",
                                  :value="licenses")
-      .col
+      b-col
         introduction-summary
         introduction-signature
     cv-download

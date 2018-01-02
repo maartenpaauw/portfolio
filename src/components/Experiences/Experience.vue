@@ -1,6 +1,6 @@
 <template lang="pug">
-  .row
-    .col-8
+  b-row
+    b-col(cols="8")
       p.text-uppercase
         b-badge.mr-2.white.bg-orange(v-if="recent",
                                      variant="warning",
@@ -17,7 +17,7 @@
         span(v-html="subtitle")
       p.silver.summary.fw1.lh-2(v-html="summary")
       hr.mt-3.mb-0.border-clouds
-    .col-4.text-right.small.silver
+    b-col.text-right.small.silver(cols="4")
       p.d-flex.align-items-center
           i.fa.fa-calendar.mr-2.ml-auto
           span(v-html="date")

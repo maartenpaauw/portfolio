@@ -3,7 +3,7 @@
                  title="Vaardigheden",
                  subtitle="1 logo zegt meer dan 1000 woorden",
                  v-observe-visibility="setActive")
-    .row
+    b-row
       skills-group(v-for="(skill, index) in skills",
                    :key="index",
                    :skill="skill")

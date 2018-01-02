@@ -1,6 +1,6 @@
 <template lang="pug">
-  .row
-    .col.text-center
+  b-row
+    b-col.text-center
       span(v-for="(profile, index) in profiles",
            :key="index")
         b-tooltip(:target="id(profile.network)",

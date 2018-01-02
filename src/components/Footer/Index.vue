@@ -1,7 +1,7 @@
 <template lang="pug">
   footer#footer
-    .container-fluid.p-5.bg-midnight-blue
-      .container
+    b-container.p-5.bg-midnight-blue(:fluid="true")
+      b-container
         footer-social
     footer-copyright
 </template>

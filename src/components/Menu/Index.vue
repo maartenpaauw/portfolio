@@ -3,7 +3,7 @@
                               toggle-breakpoint="lg",
                               :variant="variant",
                               :toggleable="true")
-    .container
+    b-container
       b-nav-toggle.ml-3(target="nav_collapse")
       b-link.navbar-brand.my-3(v-scroll-to="'#header'")
         span.text-uppercase.text-white.px-3.py-1(v-html="name")

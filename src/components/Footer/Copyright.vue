@@ -1,9 +1,9 @@
 <template lang="pug">
   section#copyright
-    .container-fluid.bg-wet-asphalt
-      .container
-        .row.text-center
-          .col
+    b-container.bg-wet-asphalt(:fluid="true")
+      b-container
+        b-row.text-center
+          b-col
             p.m-2.small.midnight-blue
               i.fa.fa-heart-o.mr-2
               a.midnight-blue.mr-2.b.hover-clouds.hover-text-decoration-none.transition-800(v-html="name",

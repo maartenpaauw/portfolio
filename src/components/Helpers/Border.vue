@@ -1,6 +1,8 @@
 <template lang="pug">
   b-row.my-4(align-h="center")
-    b-col(cols="1")
+    b-col(cols="4",
+          sm="2",
+          lg="1")
       hr.bg-midnight-blue
 </template>
 

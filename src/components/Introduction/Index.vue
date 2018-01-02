@@ -4,7 +4,14 @@
                        :subtitle="label",
                        v-observe-visibility="setActive")
     b-row.my-5(v-observe-visibility="setActive")
-      b-col
+      b-col.mb-5(lg="6",
+                 md="12",
+                 order-lg="2")
+        introduction-summary
+        introduction-signature
+      b-col(lg="6",
+            md="12",
+            order-lg="1")
         introduction-information(label="Functie",
                                  :value="label")
         introduction-link(label="Adres",
@@ -31,9 +38,6 @@
                                  :value="marital_status")
         introduction-information(label="Rijbewijs",
                                  :value="licenses")
-      b-col
-        introduction-summary
-        introduction-signature
     cv-download
 </template>
 

@@ -1,5 +1,5 @@
 <template lang="pug">
-  span.silver.fw2.lh-2
+  span.text-center.text-lg-left.silver.fw2.lh-2
     p Beste bezoeker,
     p(v-html="_summary")
 </template>

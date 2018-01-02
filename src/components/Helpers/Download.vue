@@ -1,6 +1,6 @@
 <template lang="pug">
   b-row
-    b-col.mb-5
+    b-col.mb-5.text-center.text-lg-left
       download.btn-sm(:href="cv",
                       target="_blank",
                       rel="noopener",

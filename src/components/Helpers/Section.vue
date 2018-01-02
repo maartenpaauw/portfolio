@@ -43,7 +43,7 @@
       },
       padding: {
         required: false,
-        default: 'p-5',
+        default: 'py-5 px-3',
         type: String
       }
     },

@@ -4,11 +4,12 @@
                          title="Stack Overflow",
                          subtitle="Ervaring delen is kennis vermenigvuldigen")
     b-row(align-h="center")
-      b-col.text-center(cols="8")
+      b-col.text-center(lg="8",
+                        md="12")
         stack-overflow-badge(v-for="(badge, index) in badges",
                              :badge="badge",
                              :key="index")
-    stack-overflow-description
+    stack-overflow-description.mb-5
       span(v-html="description")
 </template>
 

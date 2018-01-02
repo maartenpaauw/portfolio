@@ -2,7 +2,8 @@
   header.h-100(:id="id",
                v-observe-visibility="setActive")
     portfolio-menu(:variant="variant")
-    .container-fluid.bg-clouds.bg-image.h-75(v-observe-visibility="setVariant")
+    b-container.bg-clouds.bg-image.h-75(:fluid="true",
+                                        v-observe-visibility="setVariant")
       .row.h-100.align-items-center
         .col.text-center.text-white
           h1.text-uppercase(v-html="title")

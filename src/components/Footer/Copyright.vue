@@ -1,7 +1,7 @@
 <template lang="pug">
   section#copyright
-    .container-fluid.bg-wet-asphalt
-      .container
+    b-container.bg-wet-asphalt(:fluid="true")
+      b-container
         .row.text-center
           .col
             p.m-2.small.midnight-blue

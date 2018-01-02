@@ -1,7 +1,8 @@
 <template lang="pug">
   b-row.mb-5
-    b-col(cols="2")
-      strong.text-uppercase.midnight-blue(v-html="title")
+    b-col(lg="2")
+      p.text-uppercase.midnight-blue.text-center.text-xl-left
+        strong(v-html="title")
     b-col
       transition-group.row(tag="div",
                            enter-active-class="animated fadeIn",

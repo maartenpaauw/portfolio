@@ -1,26 +1,27 @@
 <template lang="pug">
   b-row
-    b-col(cols="8")
-      p.text-uppercase
+    b-col(lg="8")
+      p.text-uppercase.text-center.text-lg-left
         b-badge.mr-2.white.bg-orange(v-if="recent",
                                      variant="warning",
                                      tag="sup") Nieuw
         strong.midnight-blue(v-html="title")
       p(v-if="website")
-        a.concrete.d-flex.align-items-center.hover-asbestos.hover-text-decoration-none.transition-400(:href="website", 
-                                                                                                      target="_blank",
-                                                                                                      rel="noopener")
+        a.concrete.d-flex.align-items-center.justify-content-center.justify-content-lg-start.hover-asbestos.hover-text-decoration-none.transition-400(:href="website", 
+                                                                                                                                                      target="_blank",
+                                                                                                                                                      rel="noopener")
           i.fa.mr-2(:class="icon")
           span(v-html="subtitle")
-      p.concrete.d-flex.align-items-center(v-else="")
+      p.concrete.d-flex.align-items-center.justify-content-center.justify-content-lg-start(v-else="")
         i.fa.mr-2(:class="icon")
         span(v-html="subtitle")
-      p.silver.summary.fw1.lh-2(v-html="summary")
-      hr.mt-3.mb-0.border-clouds
-    b-col.text-right.small.silver(cols="4")
-      p.d-flex.align-items-center
-          i.fa.fa-calendar.mr-2.ml-auto
+      p.silver.fw1.lh-2.text-center.text-lg-left(v-html="summary")
+    b-col.text-right.small.silver(lg="4")
+      p.d-flex.align-items-center.justify-content-center.justify-content-lg-end
+          i.fa.fa-calendar.mr-2
           span(v-html="date")
+    b-col(lg="8")
+      hr.mt-3.mb-0.border-clouds
 </template>
 
 <script>

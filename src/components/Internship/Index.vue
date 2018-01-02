@@ -3,7 +3,7 @@
                      background-color="midnight-blue",
                      v-if="show")
     b-row
-      .col.text-center
+      b-col.text-center
         h1.h2.text-white Momenteel ben ik op zoek naar een {{ internship.type }}.
         p.mt-3.mb-5.silver.fw2 Van {{ from }} tot en met {{ to }}.
         internship-button(:href="mailto",

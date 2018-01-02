@@ -1,5 +1,5 @@
 <template lang="pug">
-  .col-2.text-center.mt-3
+  b-col.text-center.mt-3(cols="2")
     i.fa.fa-3x.midnight-blue.p-2.cursor-pointer(:class="icon",
                                                 @click="click")
 </template>

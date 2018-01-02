@@ -1,7 +1,7 @@
 <template lang="pug">
   b-container.h-25(:fluid="true")
     b-row.h-100
-      .col.text-center
+      b-col.text-center
         vue-gravatar(:email="email",
                      :size="200",
                      class="img-fluid rounded-circle")

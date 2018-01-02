@@ -5,7 +5,7 @@
     b-container.bg-clouds.bg-image.h-75(:fluid="true",
                                         v-observe-visibility="setVariant")
       b-row(align-v="center").h-100
-        .col.text-center.text-white
+        b-col.text-center.text-white
           h1.text-uppercase(v-html="title")
           h4.lh-2.fw2.mb-0(v-html="subtitle")
     portfolio-image

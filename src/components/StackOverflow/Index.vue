@@ -4,7 +4,7 @@
                          title="Stack Overflow",
                          subtitle="Ervaring delen is kennis vermenigvuldigen")
     b-row(align-h="center")
-      .col-8.text-center
+      b-col.text-center(cols="8")
         stack-overflow-badge(v-for="(badge, index) in badges",
                              :badge="badge",
                              :key="index")

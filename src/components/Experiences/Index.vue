@@ -1,14 +1,15 @@
 <template lang="pug">
   b-row.mb-5
-    .col-2
+    b-col(cols="2")
       strong.text-uppercase.midnight-blue(v-html="title")
-    .col
+    b-col
       transition-group.row(tag="div",
                            enter-active-class="animated fadeIn",
                            leave-active-class="animated fadeOut")
-        .col-12(v-for="(experience, index) in experiences",
-                :key="index",
-                :class="classes(index)")
+        b-col(v-for="(experience, index) in experiences",
+              cols="12",
+              :key="index",
+              :class="classes(index)")
             experience(:experience="experience")
 </template>
 

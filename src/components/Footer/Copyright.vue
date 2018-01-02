@@ -3,7 +3,7 @@
     b-container.bg-wet-asphalt(:fluid="true")
       b-container
         b-row.text-center
-          .col
+          b-col
             p.m-2.small.midnight-blue
               i.fa.fa-heart-o.mr-2
               a.midnight-blue.mr-2.b.hover-clouds.hover-text-decoration-none.transition-800(v-html="name",

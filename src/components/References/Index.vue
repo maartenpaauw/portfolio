@@ -5,7 +5,7 @@
                      v-observe-visibility="setActive")
     b-row
       references-control(direction="previous")
-      .col-8
+      b-col(cols="8")
         b-row
           transition(:duration="500",
                      enter-active-class="animated fadeIn",

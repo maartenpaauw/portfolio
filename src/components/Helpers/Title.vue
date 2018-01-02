@@ -1,6 +1,6 @@
 <template lang="pug">
   b-row.my-5
-    .col.text-center
+    b-col.text-center
       h1.h3.midnight-blue.font-weight-bold.text-uppercase(v-html="title")
       span.fw2.silver(v-html="subtitle")
       border

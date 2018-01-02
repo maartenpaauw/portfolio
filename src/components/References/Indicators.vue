@@ -1,5 +1,5 @@
 <template lang="pug">
-  .col-12.text-center
+  b-col.text-center
     i.fa.midnight-blue.cursor-pointer(v-for="(reference, index) in references",
                                       :class="classes(index)",
                                       :key="index",

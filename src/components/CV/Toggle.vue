@@ -1,8 +1,10 @@
 <template lang="pug">
   b-row.mb-5
-    .col-10.offset-2
+    b-col(cols="10",
+          offset="2")
       b-row
-        .col-8.text-center(@click="toggleIrrelevant()")
+        b-col.text-center(cols="8",
+                          @click="toggleIrrelevant()")
           small.cursor-pointer
             i.fa.fa-arrow-up.transition-800(:class="rotation")
             span.d-block.silver(v-html="text")

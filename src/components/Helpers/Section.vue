@@ -40,11 +40,6 @@
         required: false,
         default: true,
         type: Boolean
-      },
-      padding: {
-        required: false,
-        default: 'py-5 px-3',
-        type: String
       }
     },
     components: {
@@ -53,7 +48,8 @@
     computed: {
       classes () {
         return [
-          this.padding,
+          'py-5',
+          'px-3',
           this.backgroundColor ? `bg-${this.backgroundColor}` : false
         ]
       },

@@ -1,11 +1,11 @@
 <template lang="pug">
   b-row
     b-col(lg="8")
-      p.text-uppercase.text-center.text-lg-left
+      p.text-uppercase.midnight-blue.text-center.text-lg-left
         b-badge.mr-2.white.bg-orange(v-if="recent",
                                      variant="warning",
                                      tag="sup") Nieuw
-        strong.midnight-blue(v-html="title")
+        strong(v-html="title")
       p(v-if="website")
         a.concrete.d-flex.align-items-center.justify-content-center.justify-content-lg-start.hover-asbestos.hover-text-decoration-none.transition-400(:href="website", 
                                                                                                                                                       target="_blank",

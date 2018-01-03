@@ -1,10 +1,12 @@
 <template lang="pug">
   b-col(cols="12")
     b-row
-      b-col(cols="2")
-        strong.text-uppercase.midnight-blue(v-html="skill.name")
-      b-col(cols="10")
-        b-row.mt-3.mb-4
+      b-col(lg="2")
+        p.text-uppercase.midnight-blue.text-center.text-lg-left
+          strong(v-html="skill.name")
+      b-col.mt-4.d-lg-none(cols="12")
+      b-col(lg="10")
+        b-row.mt-3.mb-4.justify-content-center.justify-content-lg-start
           skills-keyword(v-for="(keyword, index) in keywords",
                          :keyword="keyword",
                          :key="index")

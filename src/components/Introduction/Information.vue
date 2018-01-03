@@ -1,6 +1,6 @@
 <template lang="pug">
   b-row
-    b-col.mt-3.d-md-none.d-lg-none.d-xl-none(cols="12")
+    b-col.mt-3.d-md-none.d-lg-none(cols="12")
     b-col.text-center.text-md-right.text-lg-left(lg="4",
                                                  md="5")
       p.mb-0.text-uppercase.midnight-blue.lh-2(v-html="label")

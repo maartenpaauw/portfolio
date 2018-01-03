@@ -5,9 +5,10 @@
         strong(v-html="title")
     b-col.mt-4.d-lg-none(cols="12")
     b-col
-      transition-group.row(tag="div",
-                           enter-active-class="animated fadeIn",
-                           leave-active-class="animated fadeOut")
+      component.row(:tag="tag",
+                    :is="is",
+                    :enter-active-class="enterActiveClass",
+                    :leave-active-class="leaveActiveClass")
         b-col(v-for="(experience, index) in experiences",
               cols="12",
               :key="index",
@@ -28,6 +29,11 @@
       experiences: {
         required: true,
         type: Array
+      },
+      animated: {
+        required: false,
+        type: Boolean,
+        default: true
       }
     },
     components: {
@@ -36,6 +42,20 @@
     methods: {
       classes (index) {
         return this.experiences.length - 1 === index ? 'mb-0' : 'mb-5'
+      }
+    },
+    computed: {
+      tag () {
+        return this.animated ? 'div' : null
+      },
+      is () {
+        return this.animated ? 'transition-group' : 'div'
+      },
+      enterActiveClass () {
+        return this.animated ? 'animated fadeIn' : null
+      },
+      leaveActiveClass () {
+        return this.animated ? 'animated fadeOut' : null
       }
     }
   }

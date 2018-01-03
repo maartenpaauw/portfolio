@@ -1,9 +1,10 @@
 <template lang="pug">
   b-row.my-5
     b-col.text-center
-      h1.h3.midnight-blue.font-weight-bold.text-uppercase(v-html="title")
+      h1.h3.font-weight-bold.text-uppercase(v-html="title",
+                                            :class="color")
       span.fw2.silver(v-html="subtitle")
-      border
+      border(:color="color")
 </template>
 
 <script>
@@ -19,6 +20,10 @@
       subtitle: {
         type: String,
         required: true
+      },
+      color: {
+        required: true,
+        type: String
       }
     },
     components: {

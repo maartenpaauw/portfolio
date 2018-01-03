@@ -1,8 +1,7 @@
 <template lang="pug">
   interest-icon.midnight-blue(:icon="icon",
                               :title="title",
-                              hover="animated tada",
-                              "column"="col-2")
+                              hover="animated tada")
 </template>
 
 <script>

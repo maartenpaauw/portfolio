@@ -1,5 +1,7 @@
 <template lang="pug">
-  .text-center(:class="column")
+  b-col.text-center(cols="4",
+                    lg="2",
+                    md="3")
     i.fa.fa-2x.mb-3.transition-400(:class="[icon, { [hover]: hovered }]",
                                    @mouseover="toggle()",
                                    @mouseleave="toggle()")
@@ -21,11 +23,6 @@
       hover: {
         required: false,
         type: String
-      },
-      column: {
-        required: false,
-        type: String,
-        default: 'col-2'
       }
     },
     data () {

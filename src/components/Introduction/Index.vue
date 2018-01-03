@@ -5,12 +5,10 @@
                        v-observe-visibility="setActive")
     b-row.my-5(v-observe-visibility="setActive")
       b-col.mb-5(lg="6",
-                 md="12",
                  order-lg="2")
         introduction-summary
         introduction-signature
       b-col(lg="6",
-            md="12",
             order-lg="1")
         introduction-information(label="Functie",
                                  :value="label")

@@ -301,7 +301,7 @@
       "keywords": []
     },
     {
-      "name": "Programmeren",
+      "name": "Coderen",
       "keywords": []
     },
     {
@@ -340,6 +340,19 @@
       "keywords": [],
       "startDate": "2017-08-20",
       "url": "https://www.npmjs.com/package/flat-ui-colors-helper",
+      "roles": [
+        "Developer"
+      ],
+      "entity": "Appsketch",
+      "type": "Web Development"
+    },
+    {
+      "name": "YoPHP",
+      "description": "Een PHP wrapper voor Yo.",
+      "highlights": [],
+      "keywords": [],
+      "startDate": "2014-08-18",
+      "url": "https://github.com/maartenpaauw/YoPHP",
       "roles": [
         "Developer"
       ],

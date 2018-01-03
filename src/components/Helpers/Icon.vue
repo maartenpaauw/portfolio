@@ -1,5 +1,5 @@
 <template lang="pug">
-  b-col.text-center(cols="4",
+  b-col.text-center(cols="6",
                     lg="2",
                     md="3")
     i.fa.fa-2x.mb-3.transition-400(:class="[icon, { [hover]: hovered }]",

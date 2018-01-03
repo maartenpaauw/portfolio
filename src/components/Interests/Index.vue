@@ -44,7 +44,7 @@
           'home-assistant': 'skill skill-home-assistant',
           'koffie': 'fa-coffee',
           'muziek': 'fa-music',
-          'coderen': 'fa-code',
+          'programmeren': 'fa-code',
           'reizen': 'fa-plane'
         }[slugify(name.toLowerCase())]
       }

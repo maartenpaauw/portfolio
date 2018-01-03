@@ -20,7 +20,11 @@
         required: true,
         type: String
       },
-      backgroundColor: {
+      title: {
+        required: false,
+        type: String
+      },
+      subtitle: {
         required: false,
         type: String
       },
@@ -29,12 +33,13 @@
         type: String,
         default: 'midnight-blue'
       },
-      title: {
+      backgroundColor: {
         required: false,
         type: String
       },
-      subtitle: {
+      padding: {
         required: false,
+        default: 'py-5 px-3',
         type: String
       }
     },
@@ -44,8 +49,7 @@
     computed: {
       classes () {
         return [
-          'py-5',
-          'px-3',
+          this.padding,
           this.backgroundColor ? `bg-${this.backgroundColor}` : false
         ]
       },

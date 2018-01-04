@@ -10,15 +10,15 @@
         a.concrete.d-flex.align-items-center.justify-content-center.justify-content-lg-start.hover-asbestos.hover-text-decoration-none.transition-400(:href="website", 
                                                                                                                                                       target="_blank",
                                                                                                                                                       rel="noopener")
-          i.fa.mr-2(:class="icon")
+          font-awesome-icon.mr-2(:icon="['fas', icon]")
           span(v-html="subtitle")
       p.concrete.d-flex.align-items-center.justify-content-center.justify-content-lg-start(v-else="")
-        i.fa.mr-2(:class="icon")
+        font-awesome-icon.mr-2(:icon="['fas', icon]")
         span(v-html="subtitle")
       p.silver.fw1.lh-2.text-center.text-lg-left(v-html="summary")
     b-col.text-right.small.silver(lg="4")
       p.d-flex.align-items-center.justify-content-center.justify-content-lg-end
-          i.fa.fa-calendar.mr-2
+          font-awesome-icon.mr-2(:icon="['fas', 'calendar']").mr-2
           span(v-html="date")
     b-col(lg="8")
       hr.mt-3.mb-0.border-clouds

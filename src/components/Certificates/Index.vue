@@ -42,7 +42,7 @@
               summary: null,
               start: accreditations.achievedDate,
               end: accreditations.expireDate,
-              icon: 'fa-certificate',
+              icon: 'certificate',
               url: accreditations.verification,
               doesNotExpire: accreditations.doesNotExpire
             }

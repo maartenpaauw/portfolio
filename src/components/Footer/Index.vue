@@ -6,7 +6,7 @@
                    title="Vragen?",
                    subtitle="Gewoon stellen")
       footer-question
-      //- footer-social
+      footer-social
     footer-copyright
 </template>
 

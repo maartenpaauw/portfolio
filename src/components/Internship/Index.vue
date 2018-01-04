@@ -8,7 +8,7 @@
         p.mt-3.mb-5.silver.fw2 Van {{ from }} tot en met {{ to }}.
         internship-button(:href="mailto",
                           variant="dark")
-          i.fa.fa-check.mr-2
+          font-awesome-icon.mr-2(:icon="['fas', 'check']")
           span.fw1 Mail mij
 </template>
 

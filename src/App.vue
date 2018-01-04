@@ -30,7 +30,6 @@
   @import "~typeface-montserrat/index.css";
   @import "~bootstrap-vue/dist/bootstrap-vue.css";
   @import "~bootstrap/scss/bootstrap";
-  @import "~font-awesome/css/font-awesome.min.css";
   @import "~animate.css/animate.min.css";
 
   // Custom

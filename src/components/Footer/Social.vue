@@ -9,7 +9,7 @@
                                                     :id="id(profile.network)",
                                                     target="_blank",
                                                     rel="noopener")
-          i.fa.fa-lg(:class="icon(profile.network)")
+          font-awesome-icon(:icon="['fab', icon(profile.network)]")
 </template>
 
 <script>
@@ -29,7 +29,7 @@
         return _.camelCase(network)
       },
       icon (network) {
-        return `fa-${slugify(network).toLowerCase()}`
+        return slugify(network).toLowerCase()
       }
     }
   }

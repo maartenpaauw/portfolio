@@ -1,9 +1,10 @@
 <template lang="pug">
   b-col.text-center
-    i.fa.midnight-blue.cursor-pointer(v-for="(reference, index) in references",
-                                      :class="classes(index)",
-                                      :key="index",
-                                      @click="click(index)")
+    font-awesome-icon.midnight-blue.cursor-pointer(v-for="(reference, index) in references",
+                                                   :icon="['far', icon(index)]",
+                                                   :class="classes(index)",
+                                                   :key="index",
+                                                   @click="click(index)")
 </template>
 
 <script>
@@ -26,13 +27,11 @@
       ...mapActions('references', [
         'specific'
       ]),
+      icon (index) {
+        return index === this.index ? 'dot-circle' : 'circle'
+      },
       classes (index) {
-        return [
-          index === this.index ? 'fa-dot-circle-o' : 'fa-circle-o',
-          {
-            'mr-1': !(index === this.references.length - 1)
-          }
-        ]
+        return !(index === this.references.length - 1) ? 'mr-1' : null
       },
       click (index) {
         this.specific(index)

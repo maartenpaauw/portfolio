@@ -36,16 +36,16 @@
     methods: {
       icon (name) {
         return {
-          'apple': 'fa-apple',
-          'bella-and-sarah': 'fa-paw',
-          'films-and-series': 'fa-film',
-          'games': 'fa-gamepad',
-          'gitaar-spelen': 'skill skill-gitaar-spelen',
-          'home-assistant': 'skill skill-home-assistant',
-          'koffie': 'fa-coffee',
-          'muziek': 'fa-music',
-          'programmeren': 'fa-code',
-          'reizen': 'fa-plane'
+          'apple': ['fab', 'apple'],
+          'bella-and-sarah': ['fas', 'paw'],
+          'films-and-series': ['fas', 'film'],
+          'games': ['fas', 'gamepad'],
+          'gitaar-spelen': ['skill', 'skill-gitaar-spelen'],
+          'home-assistant': ['skill', 'skill-home-assistant'],
+          'koffie': ['fas', 'coffee'],
+          'muziek': ['fas', 'music'],
+          'programmeren': ['fas', 'code'],
+          'reizen': ['fas', 'plane']
         }[slugify(name.toLowerCase())]
       }
     }

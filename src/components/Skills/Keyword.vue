@@ -1,6 +1,6 @@
 <template lang="pug">
-  keyword-icon.wet-asphalt(:icon="icon",
-                           :title="title")
+  keyword-icon.midnight-blue(:icon="icon",
+                             :title="title")
 </template>
 
 <script>

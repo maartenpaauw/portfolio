@@ -4,8 +4,18 @@
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
+
   export default {
-    name: 'app'
+    name: 'app',
+    computed: {
+      ...mapGetters('basics', [
+        'name'
+      ])
+    },
+    created () {
+      document.title = `${this.name} — CV + Portfolio`
+    }
   }
 </script>
 
@@ -27,13 +37,4 @@
   @import "./assets/scss/main";
   @import "./assets/scss/skills";
   @import "./assets/scss/hovered";
-
-  * {
-    font-family: 'Montserrat', sans-serif;
-
-    &::selection {
-      background: #f1c40f;
-      color: #000;
-    }
-  }
 </style>

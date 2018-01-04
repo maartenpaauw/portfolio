@@ -1,20 +1,28 @@
 <template lang="pug">
   footer#footer
-    b-container.p-5.bg-midnight-blue(:fluid="true")
-      b-container
-        footer-social
+    footer-section(id="questions",
+                   color="clouds",
+                   background-color="midnight-blue",
+                   title="Vragen?",
+                   subtitle="Gewoon stellen")
+      footer-question
+      //- footer-social
     footer-copyright
 </template>
 
 <script>
+  import Section from '@/components/Helpers/Section'
   import Copyright from '@/components/Footer/Copyright'
   import Social from '@/components/Footer/Social'
+  import Question from '@/components/Footer/Question'
 
   export default {
     name: 'portfolio-footer',
     components: {
+      footerSection: Section,
       footerSocial: Social,
-      footerCopyright: Copyright
+      footerCopyright: Copyright,
+      footerQuestion: Question
     }
   }
 </script>

@@ -3,12 +3,23 @@
     b-col(cols="4",
           sm="2",
           lg="1")
-      hr.bg-midnight-blue
+      hr.border-0(:class="backgroundColor")
 </template>
 
 <script>
   export default {
-    name: 'portfolio-border'
+    name: 'portfolio-border',
+    props: {
+      color: {
+        required: true,
+        type: String
+      }
+    },
+    computed: {
+      backgroundColor () {
+        return `bg-${this.color}`
+      }
+    }
   }
 </script>
 

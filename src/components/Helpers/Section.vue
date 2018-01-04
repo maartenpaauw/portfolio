@@ -2,13 +2,9 @@
   section(:id="id")
     b-container(:fluid="true",
                 :class="classes")
-      b-container(v-if="inContainer")
+      b-container
         section-title(v-if="visible",
-                      :title="title",
-                      :subtitle="subtitle")
-        slot
-      template(v-else="")
-        section-title(v-if="visible",
+                      :color="color",
                       :title="title",
                       :subtitle="subtitle")
         slot
@@ -24,10 +20,6 @@
         required: true,
         type: String
       },
-      backgroundColor: {
-        required: false,
-        type: String
-      },
       title: {
         required: false,
         type: String
@@ -36,10 +28,14 @@
         required: false,
         type: String
       },
-      inContainer: {
+      color: {
         required: false,
-        default: true,
-        type: Boolean
+        type: String,
+        default: 'midnight-blue'
+      },
+      backgroundColor: {
+        required: false,
+        type: String
       },
       padding: {
         required: false,

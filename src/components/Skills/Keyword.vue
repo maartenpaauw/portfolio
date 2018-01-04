@@ -21,7 +21,7 @@
     },
     computed: {
       icon () {
-        return `skill skill-${slugify(this.keyword).toLowerCase()}`
+        return ['skill', `skill-${slugify(this.keyword).toLowerCase()}`]
       },
       title () {
         return this.keyword

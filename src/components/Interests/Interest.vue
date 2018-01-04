@@ -1,7 +1,6 @@
 <template lang="pug">
   interest-icon.midnight-blue(:icon="icon",
-                              :title="title",
-                              hover="animated tada")
+                              :title="title")
 </template>
 
 <script>
@@ -19,7 +18,7 @@
       },
       icon: {
         required: true,
-        type: String
+        type: Array
       }
     },
     computed: {

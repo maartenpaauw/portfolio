@@ -6,7 +6,8 @@
         b-col.text-center(lg="8",
                           @click="toggleIrrelevant()")
           small.cursor-pointer
-            i.fa.fa-arrow-up.transition-800(:class="rotation")
+            font-awesome-icon.transition-800(icon="arrow-up",
+                                             :rotation="rotation")
             span.d-block.silver(v-html="text")
 </template>
 
@@ -23,7 +24,7 @@
         return `toon ${this.irrelevant ? 'meer' : 'minder'}`
       },
       rotation () {
-        return this.irrelevant ? 'fa-rotate-180' : null
+        return this.irrelevant ? 180 : null
       }
     },
     methods: {

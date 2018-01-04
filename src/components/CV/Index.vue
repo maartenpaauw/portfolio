@@ -53,7 +53,7 @@
             summary: work.summary,
             start: work.startDate,
             end: work.endDate,
-            icon: 'fa-briefcase',
+            icon: 'briefcase',
             url: work.url
           }
         })
@@ -66,7 +66,7 @@
             summary: education.studyType,
             start: education.startDate,
             end: education.endDate,
-            icon: 'fa-graduation-cap',
+            icon: 'graduation-cap',
             url: this.inFuture(education.endDate) ? null : this.file(education)
           }
         })
@@ -79,7 +79,7 @@
             summary: volunteer.summary,
             start: volunteer.startDate,
             end: volunteer.endDate,
-            icon: 'fa-handshake-o',
+            icon: 'handshake',
             url: volunteer.url
           }
         })

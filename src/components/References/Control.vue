@@ -1,7 +1,8 @@
 <template lang="pug">
-  b-col.text-center.mt-3(cols="2")
-    i.fa.fa-3x.midnight-blue.p-2.cursor-pointer(:class="icon",
-                                                @click="click")
+  b-col.text-center.p-3(cols="2")
+    font-awesome-icon.midnight-blue.cursor-pointer(:icon="icon",
+                                                   size="2x",
+                                                   @click="click")
 </template>
 
 <script>
@@ -21,7 +22,7 @@
           next: 'right',
           previous: 'left'
         }
-        return `fa-angle-${directions[this.direction]}`
+        return `chevron-${directions[this.direction]}`
       }
     },
     methods: {

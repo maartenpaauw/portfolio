@@ -91,7 +91,7 @@
         return `https://www.google.nl/maps/place/${this.location.address}, ${this.location.postalCode} ${this.location.city}/`.split(' ').join('+')
       },
       born () {
-        return `${this.$moment(this.birthday).format('D MMMM YYYY')} in ${this.birthplace}`
+        return `${this.$moment(this.birthday).format('D MMMM YYYY')} te ${this.birthplace}`
       },
       licenses () {
         return this.drivers_license.join(' + ')

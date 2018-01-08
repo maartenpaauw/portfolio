@@ -7,7 +7,8 @@
                           @click="toggleIrrelevant()")
           small.cursor-pointer
             font-awesome-icon.transition-800(icon="arrow-up",
-                                             :rotation="rotation")
+                                             :rotation="rotation",
+                                             :class="primary.color")
             span.d-block.silver(v-html="text")
 </template>
 
@@ -19,6 +20,9 @@
     computed: {
       ...mapGetters('work', [
         'irrelevant'
+      ]),
+      ...mapGetters('theme', [
+        'primary'
       ]),
       text () {
         return `toon ${this.irrelevant ? 'meer' : 'minder'}`

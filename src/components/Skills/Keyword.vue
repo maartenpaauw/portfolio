@@ -1,9 +1,12 @@
 <template lang="pug">
-  keyword-icon.midnight-blue(:icon="icon",
-                             :title="title")
+  keyword-icon(:icon="icon",
+               :title="title",
+               :class="primary.color")
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
+
   import slugify from 'slugify'
 
   import Icon from '@/components/Helpers/Icon'
@@ -20,6 +23,9 @@
       keywordIcon: Icon
     },
     computed: {
+      ...mapGetters('theme', [
+        'primary'
+      ]),
       icon () {
         return ['skill', `skill-${slugify(this.keyword).toLowerCase()}`]
       },

@@ -1,14 +1,17 @@
 <template lang="pug">
   introduction-information(:label="label")
-    a.silver.hover-midnight-blue.lh-2.hover-text-decoration-none.transition-400(:href="href",
-                                                                                rel="noopener",
-                                                                                :target="target")
+    a.silver.lh-2.hover-text-decoration-none.transition-400(:href="href",
+                                                            :class="primary.hover",
+                                                            :target="target",
+                                                            rel="noopener")
       span(v-if="value"
            v-html="value")
       slot(v-else)
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
+
   import Information from '@/components/Introduction/Information'
 
   export default {
@@ -36,6 +39,9 @@
       introductionInformation: Information
     },
     computed: {
+      ...mapGetters('theme', [
+        'primary'
+      ]),
       target () {
         return this.blank ? '_blank' : null
       }

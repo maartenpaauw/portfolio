@@ -1,12 +1,13 @@
 <template lang="pug">
   b-col.text-center.p-3(cols="2")
-    font-awesome-icon.midnight-blue.cursor-pointer(:icon="icon",
-                                                   size="2x",
-                                                   @click="click")
+    font-awesome-icon.cursor-pointer(:icon="icon",
+                                     size="2x",
+                                     :class="primary.color",
+                                     @click="click")
 </template>
 
 <script>
-  import { mapActions } from 'vuex'
+  import { mapActions, mapGetters } from 'vuex'
 
   export default {
     name: 'references-control',
@@ -17,6 +18,9 @@
       }
     },
     computed: {
+      ...mapGetters('theme', [
+        'primary'
+      ]),
       icon () {
         const directions = {
           next: 'right',

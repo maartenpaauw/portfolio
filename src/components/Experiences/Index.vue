@@ -1,7 +1,7 @@
 <template lang="pug">
   b-row.mb-5
     b-col(lg="2")
-      p.text-uppercase.midnight-blue.text-center.text-lg-left
+      p.text-uppercase.text-center.text-lg-left(:class="primary.color")
         strong(v-html="title")
     b-col.mt-4.d-lg-none(cols="12")
     b-col
@@ -17,6 +17,8 @@
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
+
   import Experience from '@/components/Experiences/Experience'
 
   export default {
@@ -39,12 +41,10 @@
     components: {
       Experience: Experience
     },
-    methods: {
-      classes (index) {
-        return this.experiences.length - 1 === index ? 'mb-0' : 'mb-5'
-      }
-    },
     computed: {
+      ...mapGetters('theme', [
+        'primary'
+      ]),
       tag () {
         return this.animated ? 'div' : null
       },
@@ -56,6 +56,11 @@
       },
       leaveActiveClass () {
         return this.animated ? 'animated fadeOut' : null
+      }
+    },
+    methods: {
+      classes (index) {
+        return this.experiences.length - 1 === index ? 'mb-0' : 'mb-5'
       }
     }
   }

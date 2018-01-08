@@ -1,9 +1,12 @@
 <template lang="pug">
-  interest-icon.midnight-blue(:icon="icon",
-                              :title="title")
+  interest-icon(:icon="icon",
+                :title="title",
+                :class="primary.color")
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
+
   import Icon from '@/components/Helpers/Icon'
 
   export default {
@@ -22,6 +25,9 @@
       }
     },
     computed: {
+      ...mapGetters('theme', [
+        'primary'
+      ]),
       title () {
         return this.interest.name
       }

@@ -1,10 +1,13 @@
 <template lang="pug">
-  b-button.text-uppercase(:variant="classes",
+  b-button.text-uppercase(:variant="variant",
+                          :class="classes",
                           :href="href")
     slot
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
+
   export default {
     name: 'portfolio-button',
     props: {
@@ -12,23 +15,45 @@
         required: false,
         type: String
       },
-      variant: {
+      theme: {
         required: false,
         type: String,
         default: 'dark'
       }
     },
-    data () {
-      return {
-        variants: {
-          dark: 'btn-outline-secondary bg-transparent border-asbestos asbestos hover-white border-hover-white',
-          light: 'btn-secondary bg-transperant border-midnight-blue midnight-blue hover-white bg-hover-midnight-blue'
-        }
-      }
-    },
     computed: {
+      ...mapGetters('theme', [
+        'primary'
+      ]),
+      themes () {
+        return {
+          dark: {
+            variant: 'btn-outline-secondary',
+            classes: [
+              'bg-transparent',
+              'border-asbestos',
+              'asbestos',
+              'hover-white',
+              'border-hover-white'
+            ]
+          },
+          light: {
+            variant: 'secondary',
+            classes: [
+              'bg-transparent',
+              'hover-white',
+              this.primary.color,
+              this.primary.background.hover,
+              this.primary.border.color
+            ]
+          }
+        }
+      },
+      variant () {
+        return this.themes[this.theme].variant
+      },
       classes () {
-        return this.variants[this.variant]
+        return this.themes[this.theme].classes
       }
     }
   }

@@ -1,12 +1,14 @@
 <template lang="pug">
   b-col
-    h1.midnight-blue
+    h1(:class="primary.color")
       vue-count-up(:end="count",
                    :options="options")
     span.small.silver.text-uppercase(v-html="helper")
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
+
   import _ from 'lodash'
   import axios from 'axios'
   import VueCountUp from 'vue-countup-v2'
@@ -21,21 +23,22 @@
     },
     data () {
       return {
+        count: 0,
         interval: null,
-        count: 0
+        options: {
+          separator: '.'
+        }
       }
     },
     components: {
       vueCountUp: VueCountUp
     },
     computed: {
+      ...mapGetters('theme', [
+        'primary'
+      ]),
       helper () {
         return `${this.type === 'keys' ? 'toetsaanslagen' : 'muisklikken'} vandaag`
-      },
-      options () {
-        return {
-          separator: '.'
-        }
       }
     },
     methods: {

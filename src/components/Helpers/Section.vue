@@ -4,13 +4,15 @@
                 :class="classes")
       b-container
         section-title(v-if="visible",
-                      :color="color",
+                      :color="_color",
                       :title="title",
                       :subtitle="subtitle")
         slot
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
+
   import Title from '@/components/Helpers/Title'
 
   export default {
@@ -31,7 +33,7 @@
       color: {
         required: false,
         type: String,
-        default: 'midnight-blue'
+        default: null
       },
       backgroundColor: {
         required: false,
@@ -47,6 +49,9 @@
       sectionTitle: Title
     },
     computed: {
+      ...mapGetters('theme', [
+        'primary'
+      ]),
       classes () {
         return [
           this.padding,
@@ -55,6 +60,9 @@
       },
       visible () {
         return this.title && this.subtitle
+      },
+      _color () {
+        return this.color === null ? this.primary.color : this.color
       }
     }
   }

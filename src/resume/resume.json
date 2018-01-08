@@ -16,6 +16,11 @@
     },
     "profiles": [
       {
+        "network": "Bitbucket",
+        "username": "m44rt3np44uw",
+        "url": "https://bitbucket.org/m44rt3np44uw"
+      },
+      {
         "network": "GitHub",
         "username": "maartenpaauw",
         "url": "https://github.com/maartenpaauw"
@@ -24,11 +29,6 @@
         "network": "LinkedIn",
         "username": "paauw",
         "url": "https://www.linkedin.com/in/paauw"
-      },
-      {
-        "network": "Bitbucket",
-        "username": "m44rt3np44uw",
-        "url": "https://bitbucket.org/m44rt3np44uw"
       },
       {
         "network": "Stack Overflow",

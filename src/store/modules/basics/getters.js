@@ -36,6 +36,8 @@ export default {
     return getters.basics.location
   },
   profiles: (state, getters) => {
-    return getters.basics.profiles
+    return getters.basics.profiles.sort((a, b) => {
+      return a.network.localeCompare(b.network)
+    })
   }
 }

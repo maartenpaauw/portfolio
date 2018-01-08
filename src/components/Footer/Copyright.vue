@@ -4,12 +4,13 @@
                  :padding="null")
     b-row.text-center
       b-col
-        p.m-2.small.midnight-blue
+        p.m-2.small(:class="primary.color")
           font-awesome-icon.mr-2(:icon="['far', 'heart']")
-          a.midnight-blue.mr-2.b.hover-clouds.hover-text-decoration-none.transition-800(v-html="name",
-                                                                                        :href="mailto",
-                                                                                        target="_blank",
-                                                                                        rel="noopener")
+          a.mr-2.b.hover-clouds.hover-text-decoration-none.transition-800(v-html="name",
+                                                                          :class="primary.color",
+                                                                          :href="mailto",
+                                                                          target="_blank",
+                                                                          rel="noopener")
           span(v-html="year")
 </template>
 
@@ -32,6 +33,9 @@
       ...mapGetters('basics', [
         'name',
         'mailto'
+      ]),
+      ...mapGetters('theme', [
+        'primary'
       ]),
       year () {
         const year = new Date().getFullYear()

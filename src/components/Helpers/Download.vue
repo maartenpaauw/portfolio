@@ -4,7 +4,7 @@
       download.btn-sm(:href="cv",
                       target="_blank",
                       rel="noopener",
-                      variant="light")
+                      theme="light")
         span.fw2 Download mijn CV
 </template>
 

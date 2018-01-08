@@ -7,6 +7,7 @@ import menu from './modules/menu'
 import projects from './modules/projects'
 import references from './modules/references'
 import resume from './modules/resume'
+import theme from './modules/theme'
 import work from './modules/work'
 
 Vue.use(Vuex)
@@ -19,6 +20,7 @@ export default new Vuex.Store({
     projects,
     references,
     resume,
+    theme,
     work
   }
 })

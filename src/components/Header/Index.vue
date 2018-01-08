@@ -36,6 +36,9 @@
         'name',
         'label'
       ]),
+      ...mapGetters('theme', [
+        'primary'
+      ]),
       title () {
         return `Hallo, ik ben ${this.name.split(' ')[0]}`
       },
@@ -45,7 +48,7 @@
     },
     methods: {
       setVariant (isVisible, entry) {
-        this.variant = isVisible ? 'transparent-white' : 'midnight-blue'
+        this.variant = isVisible ? 'transparent-white' : this.primary.color
       }
     },
     mixins: [

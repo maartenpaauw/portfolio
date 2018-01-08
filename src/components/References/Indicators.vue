@@ -1,10 +1,10 @@
 <template lang="pug">
   b-col.text-center
-    font-awesome-icon.midnight-blue.cursor-pointer(v-for="(reference, index) in references",
-                                                   :icon="['far', icon(index)]",
-                                                   :class="classes(index)",
-                                                   :key="index",
-                                                   @click="click(index)")
+    font-awesome-icon.cursor-pointer(v-for="(reference, index) in references",
+                                     :icon="['far', icon(index)]",
+                                     :class="[classes(index), primary.color]",
+                                     :key="index",
+                                     @click="click(index)")
 </template>
 
 <script>
@@ -21,6 +21,9 @@
     computed: {
       ...mapGetters('references', [
         'index'
+      ]),
+      ...mapGetters('theme', [
+        'primary'
       ])
     },
     methods: {

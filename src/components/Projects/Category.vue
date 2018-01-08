@@ -20,6 +20,9 @@
         'index',
         'categories'
       ]),
+      ...mapGetters('theme', [
+        'primary'
+      ]),
       active () {
         return this._index === this.index
       },
@@ -27,7 +30,7 @@
         return this.categories.indexOf(this.category)
       },
       classes () {
-        return this.active ? 'midnight-blue' : 'silver cursor-pointer'
+        return this.active ? this.primary.color : 'silver cursor-pointer'
       }
     },
     methods: {

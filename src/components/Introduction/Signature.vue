@@ -1,7 +1,8 @@
 <template lang="pug">
   span.text-center.text-lg-left
     p.m-0.silver.fw2.lh-2 Met vriendelijke groet,
-    p.m-0.signature.midnight-blue(v-html="signature")
+    p.m-0.signature(v-html="signature",
+                    :class="primary.color")
 </template>
 
 <script>
@@ -12,6 +13,9 @@
     computed: {
       ...mapGetters('basics', [
         'name'
+      ]),
+      ...mapGetters('theme', [
+        'primary'
       ]),
       signature () {
         return `${this.name}}`

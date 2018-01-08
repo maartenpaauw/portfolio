@@ -2,7 +2,7 @@
   b-col(cols="12")
     b-row
       b-col(lg="2")
-        p.text-uppercase.midnight-blue.text-center.text-lg-left
+        p.text-uppercase.text-center.text-lg-left(:class="primary.color")
           strong(v-html="skill.name")
       b-col.mt-4.d-lg-none(cols="12")
       b-col(lg="10")
@@ -13,6 +13,8 @@
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
+
   import Keyword from '@/components/Skills/Keyword'
 
   export default {
@@ -27,6 +29,9 @@
       skillsKeyword: Keyword
     },
     computed: {
+      ...mapGetters('theme', [
+        'primary'
+      ]),
       keywords () {
         return this.skill.keywords.sort((a, b) => {
           return a.localeCompare(b)

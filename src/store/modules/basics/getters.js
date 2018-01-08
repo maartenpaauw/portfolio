@@ -20,6 +20,12 @@ export default {
   phone: (state, getters) => {
     return getters.basics.phone
   },
+  tel: (state, getters) => {
+    return `tel:${getters.phone.replace(/\D+/g, '')}`
+  },
+  whatsapp: (state, getters) => {
+    return `https://api.whatsapp.com/send?phone=${getters.phone.replace(/\D+/g, '')}`
+  },
   website: (state, getters) => {
     return getters.basics.website
   },

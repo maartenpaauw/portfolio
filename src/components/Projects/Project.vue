@@ -9,7 +9,7 @@
         project-button.btn-sm(:href="project.url",
                               target="_blank",
                               rel="noopener",
-                              variant="dark") Bekijk project
+                              theme="dark") Bekijk project
 </template>
 
 <script>

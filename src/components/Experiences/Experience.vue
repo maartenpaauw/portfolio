@@ -1,7 +1,7 @@
 <template lang="pug">
   b-row
     b-col(lg="8")
-      p.text-uppercase.midnight-blue.text-center.text-lg-left
+      p.text-uppercase.text-center.text-lg-left(:class="primary.color")
         b-badge.mr-2.white.bg-orange(v-if="recent",
                                      variant="warning",
                                      tag="sup") Nieuw
@@ -25,6 +25,8 @@
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
+
   export default {
     name: 'experiences-experience',
     props: {
@@ -34,6 +36,9 @@
       }
     },
     computed: {
+      ...mapGetters('theme', [
+        'primary'
+      ]),
       title () {
         return this.experience.title
       },

@@ -35,16 +35,16 @@
       }),
       vocational () {
         return this._vocational.map((vocation) => {
-          vocation.accreditations = vocation.accreditations.map((accreditations) => {
+          vocation.accreditations = vocation.accreditations.map((accreditation) => {
             return {
-              title: accreditations.title,
+              title: accreditation.title,
               subtitle: 'Certificaat',
               summary: null,
-              start: accreditations.achievedDate,
-              end: accreditations.expireDate,
+              start: accreditation.achievedDate,
+              end: accreditation.expireDate,
               icon: 'certificate',
-              url: accreditations.verification,
-              doesNotExpire: accreditations.doesNotExpire
+              url: accreditation.verification,
+              doesNotExpire: accreditation.doesNotExpire
             }
           })
           return vocation

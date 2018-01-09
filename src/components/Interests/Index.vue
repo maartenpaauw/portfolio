@@ -24,14 +24,9 @@
       interest: Interest
     },
     computed: {
-      ...mapGetters('resume', {
-        _interests: 'interests'
-      }),
-      interests () {
-        return this._interests.sort((a, b) => {
-          return a.name.localeCompare(b.name)
-        })
-      }
+      ...mapGetters('resume', [
+        'interests'
+      ])
     },
     methods: {
       icon (name) {

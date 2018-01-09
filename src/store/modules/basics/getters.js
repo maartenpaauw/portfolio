@@ -1,6 +1,6 @@
 export default {
-  basics: (state, getters, rootState) => {
-    return rootState.resume.basics
+  basics: (state, getters, rootState, rootGetters) => {
+    return rootGetters['resume/basics']
   },
   name: (state, getters) => {
     return getters.basics.name

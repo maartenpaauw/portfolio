@@ -1,6 +1,6 @@
 export default {
-  basics: (state, getters, rootState) => {
-    return rootState.resume.basics
+  basics: (state, getters, rootState, rootGetters) => {
+    return rootGetters['resume/basics']
   },
   name: (state, getters) => {
     return getters.basics.name
@@ -36,6 +36,8 @@ export default {
     return getters.basics.location
   },
   profiles: (state, getters) => {
-    return getters.basics.profiles
+    return getters.basics.profiles.sort((a, b) => {
+      return a.network.localeCompare(b.network)
+    })
   }
 }

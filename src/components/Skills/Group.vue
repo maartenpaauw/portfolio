@@ -33,9 +33,7 @@
         'primary'
       ]),
       keywords () {
-        return this.skill.keywords.sort((a, b) => {
-          return a.localeCompare(b)
-        })
+        return this.skill.keywords
       }
     }
   }

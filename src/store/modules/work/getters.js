@@ -1,6 +1,6 @@
 export default {
-  work: (state, getters, rootState) => {
-    return rootState.resume.work
+  work: (state, getters, rootState, rootGetters) => {
+    return rootGetters['resume/work']
   },
   relevant: (state, getters) => {
     return getters.work.filter((work) => {

@@ -1,11 +1,11 @@
 export default {
-  index: state => {
+  references: (state, getter, rootState, rootGetters) => {
+    return rootGetters['resume/references']
+  },
+  index: (state) => {
     return state.index
   },
   reference: (state, getters) => {
     return getters.references[state.index]
-  },
-  references: (state, getter, rootState) => {
-    return rootState.resume.references
   }
 }

@@ -1,8 +1,8 @@
 import _ from 'lodash'
 
 export default {
-  projects: (state, getters, rootState) => {
-    return rootState.resume.projects
+  projects: (state, getters, rootState, rootGetters) => {
+    return rootGetters['resume/projects']
   },
   filtered: (state, getters) => {
     return getters.projects.filter((project) => {

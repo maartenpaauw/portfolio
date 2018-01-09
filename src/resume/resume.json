@@ -16,6 +16,11 @@
     },
     "profiles": [
       {
+        "network": "Bitbucket",
+        "username": "m44rt3np44uw",
+        "url": "https://bitbucket.org/m44rt3np44uw"
+      },
+      {
         "network": "GitHub",
         "username": "maartenpaauw",
         "url": "https://github.com/maartenpaauw"
@@ -24,11 +29,6 @@
         "network": "LinkedIn",
         "username": "paauw",
         "url": "https://www.linkedin.com/in/paauw"
-      },
-      {
-        "network": "Bitbucket",
-        "username": "m44rt3np44uw",
-        "url": "https://bitbucket.org/m44rt3np44uw"
       },
       {
         "network": "Stack Overflow",
@@ -326,12 +326,12 @@
   ],
   "projects": [
     {
-      "name": "Nummering",
-      "description": "Een gemakkelijke data merge tool voor InDesign.",
+      "name": "Flat UI Colors helper",
+      "description": "CSS helpers voor Flat UI Colors.",
       "highlights": [],
       "keywords": [],
-      "startDate": "2017-06-01",
-      "url": "http://www.nummering.nl/",
+      "startDate": "2017-08-20",
+      "url": "https://www.npmjs.com/package/flat-ui-colors-helper",
       "roles": [
         "Developer"
       ],
@@ -339,12 +339,12 @@
       "type": "Web Development"
     },
     {
-      "name": "Flat UI Colors helper",
-      "description": "CSS helpers voor Flat UI Colors.",
+      "name": "Nummering",
+      "description": "Een gemakkelijke data merge tool voor InDesign.",
       "highlights": [],
       "keywords": [],
-      "startDate": "2017-08-20",
-      "url": "https://www.npmjs.com/package/flat-ui-colors-helper",
+      "startDate": "2017-06-01",
+      "url": "http://www.nummering.nl/",
       "roles": [
         "Developer"
       ],

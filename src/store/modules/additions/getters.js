@@ -9,7 +9,7 @@ export default {
     return getters.additions.birthplace
   },
   drivers_license: (state, getters) => {
-    return getters.additions.drivers_license
+    return getters.additions.drivers_license.sort()
   },
   gender: (state, getters) => {
     return getters.additions.gender

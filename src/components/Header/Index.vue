@@ -13,6 +13,7 @@
 
 <script>
   import { mapGetters } from 'vuex'
+  import { parseFullName } from 'parse-full-name'
   
   import Image from '@/components/Header/Image'
   import Menu from '@/components/Menu/Index'
@@ -40,7 +41,7 @@
         'primary'
       ]),
       title () {
-        return `Hallo, ik ben ${this.name.split(' ')[0]}`
+        return `Hallo, ik ben ${parseFullName(this.name).first}`
       },
       subtitle () {
         return `Een ${this.label}`

@@ -13,7 +13,13 @@
                          v-model="current",
                          :total-rows='totalRows',
                          :per-page='perPage',
-                         :hide-goto-end-buttons="hideGotoEndButtons")
+                         :hide-goto-end-buttons="hideGotoEndButtons",
+                         aria-label="Paginering",
+                         label-first-page="Ga naar de eerste pagina",
+                         label-prev-page="Ga naar de vorige pagina",
+                         label-next-page="Ga naar de volgende pagina",
+                         label-last-page="Ga naar de laatste pagina",
+                         label-page="Ga naar pagina")
 </template>
 
 <script>

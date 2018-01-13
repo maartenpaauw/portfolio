@@ -135,7 +135,7 @@
     "selenium-server": "3.8.1",
     "semver": "5.4.1",
     "shelljs": "0.8.0",
-    "sinon": "4.1.4",
+    "sinon": "4.1.5",
     "sinon-chai": "2.14.0",
     "style-loader": "0.19.1",
     "stylelint": "8.4.0",

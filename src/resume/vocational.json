@@ -5,6 +5,14 @@
       "website": "https://www.udemy.com/",
       "accreditations":[
         {
+          "title": "Essentials in JavaScript ES6",
+          "website": "https://www.udemy.com/essentials-in-javascript-es6/",
+          "verification": "/static/vocational/udemy/UC-E5CQ0XC0.pdf",
+          "achievedDate": "2018-01-12",
+          "expireDate": "",
+          "doesNotExpire": "true"
+        },
+        {
           "title": "Regex Academy: An Introduction To Text Parsing Sorcery",
           "website": "https://www.udemy.com/regex-academy-an-introduction-to-text-parsing-sorcery/",
           "verification": "/static/vocational/udemy/UC-5OKCFMFF.pdf",

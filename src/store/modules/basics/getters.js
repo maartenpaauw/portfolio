@@ -26,8 +26,8 @@ export default {
   whatsapp: (state, getters) => {
     return `https://api.whatsapp.com/send?phone=${getters.phone.replace(/\D+/g, '')}`
   },
-  website: (state, getters) => {
-    return getters.basics.website
+  url: (state, getters) => {
+    return getters.basics.url
   },
   summary: (state, getters) => {
     return getters.basics.summary

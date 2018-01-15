@@ -5,7 +5,7 @@
                       target="_blank",
                       rel="noopener",
                       theme="light")
-        span.fw2 Download mijn CV
+        span.fw2 Download mijn vCard
 </template>
 
 <script>
@@ -24,7 +24,7 @@
         'name'
       ]),
       cv () {
-        return `./static/${slugify(this.name).toLowerCase()}.pdf`
+        return `./static/${slugify(this.name).toLowerCase()}.vcf`
       }
     }
   }

@@ -326,6 +326,19 @@
   ],
   "projects": [
     {
+      "name": "JSON Resume to vCard",
+      "description": "Converteerd een JSON Resume bestand naar een vCard.",
+      "highlights": [],
+      "keywords": [],
+      "startDate": "2018-01-15",
+      "url": "https://www.npmjs.com/package/json-resume-to-vcard",
+      "roles": [
+        "Developer"
+      ],
+      "entity": "Appsketch",
+      "type": "Web Development"
+    },
+    {
       "name": "Flat UI Colors helper",
       "description": "CSS helpers voor Flat UI Colors.",
       "highlights": [],

@@ -35,6 +35,9 @@ export default {
   location: (state, getters) => {
     return getters.basics.location
   },
+  maps: (state, getters) => {
+    return `https://www.google.nl/maps/place/${getters.location.address}, ${getters.location.postalCode} ${getters.location.city}/`.split(' ').join('+')
+  },
   profiles: (state, getters) => {
     return getters.basics.profiles.sort((a, b) => {
       return a.network.localeCompare(b.network)

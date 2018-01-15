@@ -88,8 +88,11 @@
       maps () {
         return `https://www.google.nl/maps/place/${this.location.address}, ${this.location.postalCode} ${this.location.city}/`.split(' ').join('+')
       },
+      age () {
+        return this.$moment().diff(this.birthday, 'years')
+      },
       born () {
-        return `${this.$moment(this.birthday).format('D MMMM YYYY')} te ${this.birthplace}`
+        return `${this.$moment(this.birthday).format('D MMMM YYYY')} (${this.age} jaar) te ${this.birthplace}`
       },
       licenses () {
         return this.drivers_license.join(' + ')

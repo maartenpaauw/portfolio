@@ -10,21 +10,10 @@
   export default {
     name: 'introduction-summary',
     computed: {
-      ...mapGetters('basics', {
-        'label': 'label',
-        '_summary': 'summary'
-      }),
-      ...mapGetters('additions', [
-        'birthday'
+      ...mapGetters('basics', [
+        'label',
+        'summary'
       ]),
-      age () {
-        return this.$moment().diff(this.birthday, 'years')
-      },
-      summary () {
-        return this._summary
-          .replace('[AGE]', this.age)
-          .replace('[LABEL]', this.label)
-      },
       salutation () {
         return `Beste ${this.$route.query.visitor ? this.$route.query.visitor : 'bezoeker'},`
       }

@@ -27,6 +27,7 @@ install:
 
 script:
   - yarn run test
+  - yarn run vcf
   - yarn run build
 
 deploy:

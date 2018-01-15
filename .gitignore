@@ -17,3 +17,5 @@ selenium-debug.log
 *.lock
 package-lock.json
 !build/
+
+**/*.vcf

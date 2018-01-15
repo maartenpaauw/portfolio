@@ -5,7 +5,7 @@
                       target="_blank",
                       rel="noopener",
                       theme="light")
-        span.fw2 Download mijn vcard
+        span.fw2 Download mijn vCard
 </template>
 
 <script>

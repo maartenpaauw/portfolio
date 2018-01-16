@@ -1,18 +1,21 @@
 <template lang="pug">
   b-col.text-center(md="6")
-    b-card.m-0.mb-4(:overlay="true",
-                    img-src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-                    body-class="d-flex")
+    b-card.m-0.mb-4.border-0(:overlay="true",
+                             img-src="https://images.unsplash.com/photo-1509624776920-0fac24a9dfda",
+                             body-class="d-flex")
       .m-auto
-        h4.card-title.white(v-html="project.name")
-        p.card-text.silver.fw-light(v-html="project.description")
+        h4.card-title(v-html="project.name",
+                      :class="primary.color")
+        p.card-text.asbestos.fw-light(v-html="project.description")
         project-button.btn-sm(:href="project.url",
                               target="_blank",
                               rel="noopener",
-                              theme="dark") Bekijk project
+                              theme="light") Bekijk project
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
+
   import Button from '@/components/Helpers/Button'
 
   export default {
@@ -25,6 +28,11 @@
     },
     components: {
       projectButton: Button
+    },
+    computed: {
+      ...mapGetters('theme', [
+        'primary'
+      ])
     }
   }
 </script>

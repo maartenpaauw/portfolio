@@ -75,7 +75,8 @@
         'mailto',
         'phone',
         'tel',
-        'location'
+        'location',
+        'maps'
       ]),
       ...mapGetters('additions', [
         'birthday',
@@ -85,9 +86,6 @@
         'marital_status',
         'drivers_license'
       ]),
-      maps () {
-        return `https://www.google.nl/maps/place/${this.location.address}, ${this.location.postalCode} ${this.location.city}/`.split(' ').join('+')
-      },
       age () {
         return this.$moment().diff(this.birthday, 'years')
       },

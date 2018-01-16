@@ -5,7 +5,7 @@
     "image": "http://www.gravatar.com/avatar/c32c1a3574c36662aee8a65da32ca8ee",
     "email": "maartenpaauw@gmail.com",
     "phone": "+31 (0)6 578 37 765",
-    "url": "http://maartenpaauw.com/",
+    "url": "http://www.maartenpaauw.com/",
     "summary": "Welkom op mijn portfolio. Ik ben een enthousiaste Allround DTP-er & Full Stack Developer. Hier vind je alle informatie over mij en mijn projecten. Kijk rustig rond en veel plezier! Als je vragen hebt hoor ik het graag.",
     "location": {
       "address": "Brouwerstraat 37",
@@ -325,6 +325,19 @@
     }
   ],
   "projects": [
+    {
+      "name": "JSON Resume to vCard",
+      "description": "Converteerd een JSON Resume bestand naar een vCard.",
+      "highlights": [],
+      "keywords": [],
+      "startDate": "2018-01-15",
+      "url": "https://www.npmjs.com/package/json-resume-to-vcard",
+      "roles": [
+        "Developer"
+      ],
+      "entity": "Appsketch",
+      "type": "Web Development"
+    },
     {
       "name": "Flat UI Colors helper",
       "description": "CSS helpers voor Flat UI Colors.",

@@ -30,7 +30,7 @@
   import Certificates from '@/components/Certificates/Index'
 
   export default {
-    name: 'portfolio-main',
+    name: 'portfolio',
     data () {
       return {
         iternships: [{

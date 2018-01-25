@@ -2,23 +2,23 @@
   b-container.h-25(:fluid="true")
     b-row.h-100
       b-col.text-center
-        vue-gravatar(:email="email",
-                     :size="200",
-                     class="img-fluid rounded-circle")
+        b-img.border-0(:src="image",
+                       alt="Maarten Paauw",
+                       width="200",
+                       height="200",
+                       rounded="circle",
+                       :fluid="true",
+                       :thumbnail="true")
 </template>
 
 <script>
   import { mapGetters } from 'vuex'
-  import Gravatar from 'vue-gravatar'
 
   export default {
     name: 'header-image',
-    components: {
-      vueGravatar: Gravatar
-    },
     computed: {
       ...mapGetters('basics', [
-        'email'
+        'image'
       ])
     }
   }
@@ -27,9 +27,5 @@
 <style lang="scss" scoped="scoped">
   .container-fluid {
     margin-top: -100px;
-
-    img {
-      border: 5px white solid;
-    }
   }
 </style>

@@ -147,7 +147,7 @@
     "uglifyjs-webpack-plugin3": "1.0.0-beta",
     "url-loader": "0.6.2",
     "vue-loader": "13.7.0",
-    "vue-style-loader": "3.1.1",
+    "vue-style-loader": "4.0.0",
     "vue-template-compiler": "2.5.13",
     "webpack": "3.10.0",
     "webpack-bundle-analyzer": "2.9.2",

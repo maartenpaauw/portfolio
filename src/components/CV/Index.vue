@@ -90,7 +90,11 @@
         return new Date(end) >= new Date()
       },
       file (education) {
-        return `./static/education/${slugify(`${education.institution} ${education.area} ${education.studyType}`).toLowerCase()}.pdf`
+        const name = slugify(`${education.institution} ${education.area} ${education.studyType}`, {
+          lower: true,
+          remove: /[^a-zA-Z0-9- ]/g
+        })
+        return `./static/education/${name}.pdf`
       }
     },
     mixins: [

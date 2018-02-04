@@ -1,7 +1,7 @@
 <template lang="pug">
   b-col
     h1(:class="primary.color")
-      vue-count-up(:end="count",
+      vue-count-up(:endVal="count",
                    :options="options")
     span.small.silver.text-uppercase(v-html="helper")
 </template>

@@ -153,7 +153,7 @@
     "webpack": "3.11.0",
     "webpack-bundle-analyzer": "2.11.1",
     "webpack-dev-middleware": "2.0.6",
-    "webpack-hot-middleware": "2.21.0",
+    "webpack-hot-middleware": "2.21.1",
     "webpack-merge": "4.1.2",
     "z-schema": "3.19.1"
   },

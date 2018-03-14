@@ -140,7 +140,7 @@
     "sinon": "4.4.3",
     "sinon-chai": "3.0.0",
     "style-loader": "0.20.3",
-    "stylelint": "9.1.1",
+    "stylelint": "9.1.2",
     "stylelint-config-standard": "18.2.0",
     "stylelint-processor-html": "1.0.0",
     "stylus": "0.54.5",

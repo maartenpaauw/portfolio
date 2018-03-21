@@ -12,6 +12,12 @@
   }
 }
 
+.skill-c {
+  &:hover {
+    color: $skill-c-hover;
+  }
+}
+
 .skill-css3 {
   &:hover {
     color: $skill-css3-hover;

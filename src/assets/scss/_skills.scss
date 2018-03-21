@@ -51,6 +51,12 @@
   }
 }
 
+.skill-c {
+  &::before {
+    content: $skill-c;
+  }
+}
+
 .skill-css3 {
   &::before {
     content: $skill-css3;

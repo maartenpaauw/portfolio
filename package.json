@@ -100,7 +100,7 @@
     "eventsource-polyfill": "0.9.6",
     "express": "5.0.0-alpha.6",
     "extract-text-webpack-plugin": "3.0.2",
-    "favicons-webpack-plugin": "0.0.7",
+    "favicons-webpack-plugin": "0.0.8",
     "file-loader": "1.1.11",
     "friendly-errors-webpack-plugin": "1.6.1",
     "html-webpack-plugin": "3.0.7",

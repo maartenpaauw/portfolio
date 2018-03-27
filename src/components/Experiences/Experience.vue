@@ -61,7 +61,7 @@
         return this.$moment(this.experience.start).format('MMMM YYYY')
       },
       end () {
-        return typeof this.experience.end === 'undefined' ? 'Huidig' : this.$moment(this.experience.end).format('MMMM YYYY')
+        return typeof this.experience.end === 'undefined' ? 'heden' : this.$moment(this.experience.end).format('MMMM YYYY')
       },
       recent () {
         return this.$moment().subtract(1, 'month') <= this.$moment(this.experience.start)

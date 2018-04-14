@@ -47,7 +47,7 @@
           const username = 'maartenpaauw'
           const start = this.$moment().startOf('day').unix()
           const end = this.$moment().unix()
-          const response = await axios.get(`https://crossorigin.me/http://api.whatpulse.org/pulses.php?user=${username}&start=${start}&end=${end}&format=json`)
+          const response = await axios.get(`https://api.whatpulse.org/pulses.php?user=${username}&start=${start}&end=${end}&format=json`)
           this.count = 0
           if (!response.data.error) {
             Object.values(response.data).forEach((pulse) => {

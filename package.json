@@ -155,7 +155,7 @@
     "webpack-dev-middleware": "3.1.2",
     "webpack-hot-middleware": "2.22.1",
     "webpack-merge": "4.1.2",
-    "z-schema": "3.19.1"
+    "z-schema": "3.20.0"
   },
   "greenkeeper": {
     "branchPrefix": "dependency-update-",

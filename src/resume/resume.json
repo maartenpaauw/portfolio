@@ -327,6 +327,19 @@
   ],
   "projects": [
     {
+      "name": "Home Assistant Community Themes",
+      "description": "Alle Home Assistant community thema's in één plek.",
+      "highlights": [],
+      "keywords": [],
+      "startDate": "2018-02-05",
+      "url": "https://github.com/maartenpaauw/home-assistant-community-themes",
+      "roles": [
+        "Developer"
+      ],
+      "entity": "Appsketch",
+      "type": "Home Automation"
+    },
+    {
       "name": "JSON Resume to vCard",
       "description": "Converteerd een JSON Resume bestand naar een vCard.",
       "highlights": [],

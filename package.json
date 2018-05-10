@@ -105,7 +105,7 @@
     "friendly-errors-webpack-plugin": "1.7.0",
     "html-webpack-plugin": "3.2.0",
     "http-proxy-middleware": "0.18.0",
-    "husky": "0.15.0-rc.2",
+    "husky": "0.15.0-rc.13",
     "inject-loader": "4.0.1",
     "karma": "2.0.2",
     "karma-coverage": "1.1.2",

@@ -1,6 +1,5 @@
 # Portfolio
 
-[![Greenkeeper](https://badges.greenkeeper.io/maartenpaauw/portfolio.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/maartenpaauw/portfolio.svg?branch=master)](https://travis-ci.org/maartenpaauw/portfolio)
 [![Dependencies Status](https://david-dm.org/maartenpaauw/portfolio/status.svg)](https://david-dm.org/maartenpaauw/portfolio)
 [![Dev Dependencies Status](https://david-dm.org/maartenpaauw/portfolio/dev-status.svg)](https://david-dm.org/maartenpaauw/portfolio?type=dev)

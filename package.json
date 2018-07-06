@@ -69,7 +69,7 @@
   "devDependencies": {
     "@commitlint/cli": "7.0.0",
     "@commitlint/config-conventional": "7.0.1",
-    "autoprefixer": "8.6.4",
+    "autoprefixer": "8.6.5",
     "babel-core": "6.26.3",
     "babel-eslint": "8.2.5",
     "babel-loader": "7.1.5",

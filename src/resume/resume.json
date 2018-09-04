@@ -54,6 +54,17 @@
       "relevant": true
     },
     {
+      "name": "DevMob B.V.",
+      "description": "",
+      "position": "Full Stack Developer",
+      "url": "https://www.devmob.com/",
+      "startDate": "2018-09-03",
+      "endDate": "2019-02-01",
+      "summary": "Stagiair full stack developer bij DevMob B.V.",
+      "highlights": [],
+      "relevant": true
+    },
+    {
       "name": "Gracious Studios",
       "description": "",
       "position": "Web developer",
@@ -395,6 +406,6 @@
   "meta": {
     "canonical": "https://raw.githubusercontent.com/maartenpaauw/portfolio/master/src/resume/resume.json",
     "version": "v1.0.0",
-    "lastModified": "2018-01-14T23:22:41"
+    "lastModified": "2018-09-04T08:06:33"
   }
 }

@@ -5,6 +5,14 @@
       "website": "https://www.udemy.com/",
       "accreditations":[
         {
+          "title": "Learn what's new in PHP 7",
+          "website": "https://www.udemy.com/php7-new-features/",
+          "verification": "/static/vocational/udemy/UC-6BQJ0F9Y.pdf",
+          "achievedDate": "2018-09-13",
+          "expireDate": "",
+          "doesNotExpire": "true"
+        },
+        {
           "title": "Essentials in JavaScript ES6",
           "website": "https://www.udemy.com/essentials-in-javascript-es6/",
           "verification": "/static/vocational/udemy/UC-E5CQ0XC0.pdf",

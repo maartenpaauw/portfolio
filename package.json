@@ -122,7 +122,7 @@
     "nightwatch": "0.9.21",
     "node-sass": "4.9.3",
     "opn": "5.3.0",
-    "optimize-css-assets-webpack-plugin": "4.0.3",
+    "optimize-css-assets-webpack-plugin": "5.0.1",
     "ora": "3.0.0",
     "phantomjs-prebuilt": "2.1.16",
     "pug": "2.0.3",

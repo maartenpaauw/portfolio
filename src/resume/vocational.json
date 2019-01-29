@@ -5,6 +5,14 @@
       "website": "https://www.udemy.com/",
       "accreditations":[
         {
+          "title": "The Complete React Web Developer Course (with Redux)",
+          "website": "https://www.udemy.com/react-2nd-edition/",
+          "verification": "/static/vocational/udemy/UC-KK22I7C8.pdf",
+          "achievedDate": "2019-01-29",
+          "expireDate": "",
+          "doesNotExpire": "true"
+        },
+        {
           "title": "Learn what's new in PHP 7",
           "website": "https://www.udemy.com/php7-new-features/",
           "verification": "/static/vocational/udemy/UC-6BQJ0F9Y.pdf",

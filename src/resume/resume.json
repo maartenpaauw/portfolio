@@ -44,6 +44,16 @@
   },
   "work": [
     {
+      "name": "SWIS",
+      "description": "",
+      "position": "Developer",
+      "url": "https://www.swis.nl/",
+      "startDate": "2019-10-01",
+      "summary": "Alle voorkomende werkzaamheden op het gebied van development.",
+      "highlights": [],
+      "relevant": true
+    },
+    {
       "name": "Appsketch",
       "description": "",
       "position": "Zelfstandig ondernemer",
